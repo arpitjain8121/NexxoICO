@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buy Token Payment</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" />
+
+    <link rel="stylesheet" media="" href='css/material-dashboard.min.css'>
+    <link rel="stylesheet" media="" href='css/dashboard.css'>
+    <link rel="stylesheet" media="" href='css/slidermenu.css'>
+    <link rel="stylesheet" media="" href='css/media-query.css'>
+    <link rel="stylesheet" media="" href='css/buytokens.css'>
+    
+</head>
+
+<body style="background:#f4f7fa;">
+
+    <div id="header" class="">
+        <div class="container" style="position:relative;">
+            <a href="#home">
+                <div id="logo" class=""></div>
+
+            </a>
+            <ul id="menu" class="">
+                <li class="">
+                    <span class="clientName" style="color:#000;font-weight:400;">John Doe</span>
+
+                    <br>
+                    <span style="color:#000;font-weight:400;">Enabler Code</span>
+                    <span>:</span>
+                    <span style="color: #73879C;">2xVGDA1</span>
+
+                </li>
+                <li style="border-right:1px solid #ddd;">
+                    <span>
+								<a href="#" class="user-profile " data-toggle="">
+								<img src="images/img.png" alt="">
+
+							  </a>
+
+								</span>
+
+                </li>
+
+                <li><a href="#" class="logout">Logout</a></li>
+
+            </ul>
+
+            <nav class="">
+                <a href="" id="menuToggle" title="hide navigation" class=""><span class="navOpen"></span></a>
+
+                <a href="#" onclick="closeSidebar(this)">Buy Token</a>
+                <a href="#" onclick="closeSidebar(this)">Logout</a>
+
+            </nav>
+        </div>
+    </div>
+    <div class="section Invite">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-6" style="background:#323e48;">
+                    <h2 class="totalToken">29,500 <span style="font-weight:normal">Nexxo Tokens</span></h2></div>
+                <div class="col-sm-6 title" style="background:#05abc7;">
+                    <button type="button" class="btn btn-primary InviteDetails"> Invite Friends, earn 500 coins</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section navbar_custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-trophy">&nbsp;Bonus</i></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#"><i class="fa fa-database">&nbsp;Buy Token</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="fa fa-share-alt">&nbsp;Refer Friend</i></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-user">&nbsp;Upload KYC</i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid main_container" style="">
+
+        <div class="container">
+
+            <div class="row align-items-center justify-content-center">
+
+                <div class="col-md-4">
+                    <div class="card card-default cardBorderRadius">
+                        <div class="card-body" style="">
+                            <div class="row text-center">
+                                <div class="col-md-12 ">
+
+                                    <img src="images/trophy_light.png" class="mx-auto d-block" width="90" height="90">
+
+                                </div>
+
+                                <div class="col-md-12 py-1">
+
+                                    <h5 style="color:#747474;font-weight:400;">Bonus "5%"</h5>
+
+                                </div>
+
+                                <div class="col-md-12 py-0">
+                                    <p class="tokenNumber">29,500</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card card-default cardBorderRadius">
+                        <div class="card-body" style="">
+                            <div class="row text-center">
+                                <div class="col-md-12 ">
+
+                                    <img src="images/refer1.png" class="mx-auto d-block" width="90" height="90">
+
+                                </div>
+
+                                <div class="col-md-12 py-1">
+
+                                    <h5 style="color:#747474;font-weight:400;">Referred</h5>
+
+                                </div>
+
+                                <div class="col-md-12 py-0">
+                                    <p class="tokenNumber">5,500</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-default cardBorderRadius active">
+                        <div class="card-body" style="">
+                            <div class="row text-center">
+                                <div class="col-md-12 ">
+
+                                    <img src="images/purchase_dark.png" class="mx-auto d-block" width="90" height="90">
+
+                                </div>
+
+                                <div class="col-md-12 py-1">
+
+                                    <h5 style="color:#747474;font-weight:400;">Purchased </h5>
+
+                                </div>
+
+                                <div class="col-md-12 py-0">
+                                    <p class="tokenNumber active">14,500</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div class="line buyToken"></div>
+				</div>
+			</div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-default cardBorderRadius newCard">
+                        <div class="card-body" style="">
+<form class="form" useraction="" method="post" role="form" id="loginForm">
+                        <div class="row RowAlignment">
+                            <div class="alert text-center w-100 errorMessage" style="display:none;"></div>
+                        </div>
+
+                        <div class="row py-2 align-items-center RowAlignment">
+                            <div class="col pr-0" id="paymentMethodText">Payment Method</div>
+                            <div class="form-check my-0 col-2">
+                                <input type="radio" class="" id="fiatCurrPayMethodRB" value="USD" name="currencyRadioBtn" checked="">
+                                <label class="form-check-label" for="fiatCurrPayMethodRB">USD</label>
+                            </div>
+                            <div class="form-check my-0 col-2">
+                                <input type="radio" class="" id="btcPayMethodRB" value="BTC" name="currencyRadioBtn">
+                                <label class="form-check-label" for="btcPayMethodRB">BTC</label>
+                            </div>
+                            <div class="form-check my-0 col-2">
+                                <input type="radio" class="" id="ethPayMethodRB" value="ETH" name="currencyRadioBtn">
+                                <label class="form-check-label" for="ethPayMethodRB">ETH</label>
+                            </div>
+                        </div>
+						
+						<hr style="margin-top:0px;"></hr>
+
+                        <div class="row align-items-center py-2 RowAlignment">
+                            <label for="tokensPerCurrencyUnitDiv" class="col-5"><span id="exchangeUnitValue">1 USD</span> Exchange Rate</label>
+                            <input type="text" class="form-control my-0 col-7 txtbox" id="tokensPerCurrencyUnitDiv" value="" placeholder="Check rate value" readonly="" aria-readonly="true">
+
+                        </div>
+
+                        <div class="row align-items-center py-2 RowAlignment PayAmt" style="display: flex;">
+
+                            <label for="currencyVal" class="col-5">Payment Amount in <span class="fiatDropDownCurrencyCode">USD</span></label>
+                            <select id="currencyVal" class="form-control col-7 my-0 txtbox" name="Payment Amount" placeholder="Payment Amount">
+
+
+                                <option name="500" value="1" selected="">500 USD</option>
+                                <option name="1000" value="2">1000 USD</option>
+                                <option name="2000" value="3">2000 USD</option>
+                                <option name="5000" value="4">5000 USD</option>
+                                <option value="5">Others</option>
+                            </select>
+
+                        </div>
+
+                        <div class="row align-items-center py-2 RowAlignment" id="paymentOtherField" style="display: none;">
+                            <label for="othersVal" class="col-5"></label>
+                            <input type="text" class="form-control my-0 col-7 txtbox" id="othersVal" value="" placeholder="Enter currency value">
+
+                        </div>
+
+
+
+
+                        <div id="modal-usd" class="container-fluid justify-content-center align-item-center my-2" style="padding: 0px; display: block;">
+
+                            <div class="row RowAlignment">
+                                <div class="col-5" style="font-size:14px;line-height: 1.42857;  font-weight: 400;">Please pay : </div>
+                                <div class="col px-0 text-c enter font-weight-bold text-success" id="pay-amnt-modal-usd">
+								<input type="text" class="form-control my-0 col-7 txtbox" id="" value="500.00 USD" style="padding-left:10px;background:#00c57f;border-color:#00c57f;color:#fff;pointer-events:none;" >
+								
+								</div>
+                                <!-- <div class="col font-weight-bold text-success"></div> -->
+                            </div>
+
+                            <div class="container-fluid bank-details bg-light my-2">
+                                <div class="row justify-content-center align-item-center py-2">
+                                    <div class="font-weight-bold">Bank Account Details</div>
+                                </div>
+
+                                <div class="row justify-content-center align-item-center py-2">
+                                    <div class="col-5 text-right font-weight-light">Name :</div>
+                                    <div class="col-7 text-success font-weight-light text-justify">Nexxo Investments Pvt. Ltd.</div>
+                                </div>
+                                <div class="row justify-content-center align-item-center py-2">
+                                    <div class="col-5 text-right font-weight-light">Address :</div>
+                                    <div class="col-7 text-success font-weight-light text-justify">
+                                        MOX, Level 3, 451 Joo Chiat Road, #03-02 Singapore 427664
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center align-item-center py-2">
+                                    <div class="col-5 text-right font-weight-light">Account Number :</div>
+                                    <div class="col-7 text-success font-weight-light text-justify">23942623492</div>
+                                </div>
+                                <div class="row justify-content-center align-item-center py-2">
+                                    <div class="col-5 text-right font-weight-light">Swift Code :</div>
+                                    <div class="col-7 text-success font-weight-light text-justify">OBSGSSCDD</div>
+                                </div>
+                                <div class="row justify-content-center align-item-center py-2">
+                                    <div class="col-5 text-right font-weight-light">Bank Name :</div>
+                                    <div class="col-7 text-success font-weight-light text-justify">Oversea-Chinese Banking Corporation Limited</div>
+                                </div>
+                                <div class="row justify-content-center align-item-center py-2">
+                                    <div class="col-5 text-right font-weight-light">Bank Address :</div>
+                                    <div class="col-7 text-success font-weight-light text-justify">65 Chulia Street, OCBC Centre, Singapore 049513</div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center py-2 RowAlignment">
+                                <label for="" class="col-5">Upon confirmation you will receive</label>
+                                <input type="text" class="form-control txtbox my-0 col-7 nexxo-tokens-purchased" id="nexxo-tokens-purchased-usd" value="" placeholder="Token Number" readonly="" aria-readonly="true">
+
+                            </div>
+
+                            <div class="row RowAlignment justify-content-center align-item-center py-2">
+                                <div class="text-secondary text-justify">
+                                    You will receive a confirmation email once the transaction is validated (this may take up to a few hours). We may email you with an additional request for KYC documents. If we do not receive your documentation, your funds will be returned to your wallet.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--Details For BTC-->
+
+                        <div id="modal-btc" class="container justify-content-center align-item-center my-2" style="padding: 0px; display: none;">
+                            <div class="row RowAlignment">
+
+                                <div class="col-5" style="font-size: 14px;line-height: 1.42857;  font-weight: 400;">Please pay : </div>
+                                <div class="col px-0 text-right font-weight-bold text-success" id="pay-amnt-modal-btc"><input type="text" class="form-control my-0 col-7 txtbox" id="" value="0.0765490300 BTC" style="padding-left:10px;background:#00c57f;border-color:#00c57f;color:#fff;pointer-events:none;" ></div>
+                                
+                            </div>
+                            <div class="row justify-content-center align-item-center py-3">
+                                <div class="font-weight-bold destinationwalletAddress">Destination Wallet Address</div>
+                            </div>
+                            <div class="row justify-content-center align-item-center">
+                                <div class="headerImg px-2"><img id="addr-img-modal-btc" src="/assets/images/Bitcoin_QR_code.png" alt="Bitcoin Wallet Address" class="logo-size-address"></div>
+                            </div>
+                            <div class="row justify-content-center align-item-center">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control txtbox destination-wallet-address" id="cryptoBTCWalletValue-nexxo" readonly="" aria-readonly="true" placeholder="Wallet Address" aria-label="Wallet Address" aria-describedby="basic-addon2" value="1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary copy-destination-wallet-address" id="copyBTCWalletAddr" type="button">Copy</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center py-2 RowAlignment">
+                                <label for="" class="col-5">Upon confirmation you will receive</label>
+                                <input type="text" class="form-control txtbox my-0 col-7 nexxo-tokens-purchased" id="nexxo-tokens-purchased-btc" value="" placeholder="Token Number" readonly="" aria-readonly="true">
+
+                            </div>
+
+                            <div class="row RowAlignment justify-content-center align-item-center py-2">
+                                <div class="text-secondary text-justify">
+                                    You will receive a confirmation email once the transaction is validated (this may take up to a few hours). We may email you with an additional request for KYC documents. If we do not receive your documentation, your funds will be returned to your wallet.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--Details For ETH-->
+                        <div id="modal-eth" class="container justify-content-center align-item-center my-3" style="padding: 0px; display: none;">
+                            <div class="row">
+                                <div class="col-5 RowAlignment" style="font-size: 14px;line-height: 1.42857;  font-weight: 400;">Please pay : </div>
+                                <div class="col px-0 text-right font-weight-bold text-success" id="pay-amnt-modal-eth">2.309779466809444000</div>
+                                <div class="col font-weight-bold text-success">ETH</div>
+                            </div>
+                            <div class="row justify-content-center align-item-center py-2">
+                                <div class="font-weight-bold destinationwalletAddress">Destination Wallet Address</div>
+                            </div>
+                            <div class="row justify-content-center align-item-center">
+                                <div class="headerImg px-2"><img id="addr-img-modal-eth" src="/assets/images/Ethereum_QR_code.png" alt="Ethereum Wallet Address" class="logo-size-address"></div>
+                            </div>
+                            <div class="row justify-content-center align-item-center">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control txtbox destination-wallet-address" id="cryptoETHWalletValue-nexxo" readonly="" aria-readonly="true" placeholder="Wallet Address" aria-label="Wallet Address" aria-describedby="basic-addon2" value="0x29D7d1dd5B6f9C864d9db560D72a247c178aE86B">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary copy-destination-wallet-address" id="copyETHWalletAddr" type="button">Copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center py-2 RowAlignment">
+                                <label for="" class="col-5">Upon confirmation you will receive</label>
+                                <input type="text" class="form-control txtbox my-0 col-7 nexxo-tokens-purchased" id="nexxo-tokens-purchased-eth" value="" placeholder="Token Number" readonly="" aria-readonly="true">
+
+                            </div>
+
+                            <div class="row RowAlignment justify-content-center align-item-center py-2">
+                                <div class="text-secondary text-justify">
+                                    <p>You will receive a confirmation email once the transaction is validated (this may take up to a few hours). We may email you with an additional request for KYC documents. If we do not receive your documentation, your funds will be returned to your wallet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+
+                    </form>
+
+                        </div>
+                    </div>
+					
+					<div class="row align-items-center py-0">
+                            <button type="button" id="buyTokensBtn" class="btn btn-primary btn-md btn-block mb-0">Purchase</button>
+                        </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

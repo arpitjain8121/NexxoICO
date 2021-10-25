@@ -1,0 +1,214 @@
+ body {
+	font-family: 'Roboto', sans-serif;
+	color:#333;
+	font-size:14px;
+	line-height:1;
+	
+}
+
+
+ body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+#header {
+    
+    height: 90px;
+    z-index: 1000;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    transition: 0.8s;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+}
+#logo {
+    width: 120px;
+    height: 70px;
+    float: left;
+    margin-top: 10px;
+    transition: 0.8s;
+    background-image: url(../images/logo1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+ul#menu{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    float: right;
+    transition: 0.8s;
+    font-size: 16px;
+    letter-spacing: 1px;
+    
+}
+ul#menu li {
+    display: inline-block;
+    /*margin-left: 40px;*/
+	padding: 8px;
+	font-size: 13px;
+}
+ul#menu li a {
+     transition: 0.3s;
+}
+ul#menu li a:hover {
+    color: #00abc7;
+    text-decoration: none;
+}
+
+ul#menu li span{line-height:1.5;}
+
+.user-profile img {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-right: 10px;
+	position: relative;
+    top: -9px;
+	border:1px solid #ddd;
+}
+
+.logout {
+    padding: 9px 10px;
+    border: 1px solid #dee4e5;
+    background: #dee4e5;
+    color: #bdc0c1;
+    border-radius: 6px;
+}
+
+.navbar_custom {
+    background-color: #fff;
+    border-top: 1px solid #e7e7e7;
+}
+.nav li {padding: 10px 0px 10px;float:left;}
+
+.nav li:hover{border-bottom:2px solid #00abc7}
+.nav li.active{border-bottom:2px solid #00abc7}
+
+.nav li a {color:#adb2b6;font-size:15px;}
+
+.nav li a.active{color:#00abc7 !important;background:transparent!important;}
+
+
+.nav > li > a:hover, .nav > li > a:focus {
+    
+	color:#00abc7
+}
+
+
+/* .subTab::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+	top:2px;
+    background: #00abc7;
+    transition: width .3s;
+}
+
+.subTab:hover::after {
+    width: 100%;
+    //transition: width .3s;
+} */
+
+.totalToken{line-height: 2;color:#fff;margin-bottom:0px;padding-left:16%;text-align:left; font-weight:500;}
+.totalToken span{font-size:20px;}
+.InviteDetails{background:#fff !important;color:#000 !important;border-color:#fff !important;margin-top:14px;z-index:1;}
+.cardBorderRadius{border-radius:14px;}	
+.cardBorderRadius.active{border:1px solid #00abc7}
+
+.tokenNumber{color:#cbcbcb;font-weight:600;font-size:50px;margin:0px;}
+
+
+.tokenNumber.active{color:#00abc7}
+
+
+.main_container{padding-top: 0%;}
+.bonusText{text-transform:none;color:#00acc8;font-weight:400;margin-bottom:-40px;}
+table.dataTable thead th{color:#8b8e9e;font-weight:400;}
+table.dataTable thead th, table.dataTable thead td{border-bottom:2px solid #00abc7;border-top:2px solid #00abc7 }
+
+
+.TokPur{font-size:28px;padding:15px 49px;}
+.newCard .card-body {
+    padding: 30px;
+}
+
+#paymentMethodText {
+    font-size: 16px;
+    line-height: 1.42857;
+    font-weight: 400;
+	color:#00abc7;
+}
+
+.card .card-body .form-group{margin:8px 0px 0px;}
+
+.txtbox::-webkit-input-placeholder {padding-left:10px !important; }
+ .txtbox::-moz-placeholder {padding-left:10px !important;}
+ .txtbox:-ms-input-placeholder {padding-left:10px !important;}
+ .txtbox:-moz-placeholder {padding-left:10px !important;}
+ 
+ #personalInfoBtn {
+    width: 30%;
+    /* margin: auto; */
+}
+
+.title:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -40px;
+   z-index:-1px;
+    background: #05abc7 !important;
+    transform-origin: bottom left;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+}
+
+.buyImage{background-repeat: no-repeat;width: 30px;height: 30px;background:url(../images/coin.png);background-size: 100%;}
+
+.buyImage:after{
+	content: "Buy Token";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+	padding-left:22px;
+	
+	
+}
+
+.bonusImage{background-repeat: no-repeat;width: 30px;height: 30px;background:url(../images/bonusImage.png);background-size: 100%;}
+
+.bonusImage:after{
+	content: "Buy Token";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+	padding-left:22px;
+	
+	
+}
+
+
+
+
+@media (max-width: 767px) {
+		.nav li{padding:0px;}
+		.bonusText{margin-bottom:0px;}
+		.buyCoin{float:none;width:100%;}
+		.InviteDetails{margin-top:4px;padding: 6px 15px;}
+		
+		#buyTokensBtn{width:100%;}
+		#personalInfoBtn{width:100%;}
+		
+		.mobileCard{margin-bottom:0px;}
+	
+	}

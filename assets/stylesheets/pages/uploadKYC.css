@@ -1,0 +1,28 @@
+.dropzone{border-radius:10px;}
+.uploadPassport{padding-top:20px; font-size:14px;}
+.Drag{font-size:30px;font-weight:400;}
+
+.MonthDiv,.DateDiv,.YearDiv{padding-left:0px;}
+.YearDiv{padding-right:0px;}
+
+.txtbox{padding-left:10px;}
+
+#submitBtn{width: 20%;}
+
+.profile-photo-dropzone{width:330px!important;height:330px!important;border-radius:50%;}
+
+.profile-photo-dropzone .uploadPassport{padding-top:60px;}
+.profile-text{font-size:40px; padding-top:40px;color:#00abc7;}
+.user_name,.user_email{text-align:left;}
+
+
+@media (max-width: 767px) {
+
+    #personIdentityForm > .form-group {padding-bottom:0px;margin:0px;}
+    #submitBtn{width: 100%;}
+	
+	.profile-photo-dropzone{width:330px!important;height:330px!important;border-radius:50%;}
+	
+	.user_name,.user_email,.profile-text{text-align:center;}
+	.nexxo_logo,.profile-text{justify-content:center;}
+}

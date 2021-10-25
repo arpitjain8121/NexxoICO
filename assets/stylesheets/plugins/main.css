@@ -1,0 +1,90 @@
+body{overflow-x:hidden}
+.modal-dialog{z-index: 9999}
+#app-logo {margin:0px;}
+
+#app-logo img{max-height: 45px;margin: 0px 5px;}
+
+.wrapper{ min-height: 100%;height: auto;margin: 0 auto -44px;padding: 0 0 44px;}
+
+.pfix{margin-bottom:0px;text-align: center}
+
+#header_nav,#header_left{background:none;border: 0px solid #d1d1d1;}
+
+.navbar_custom{background-color: #f8f8f8;border:1px solid #e7e7e7;}
+
+.uppercase{text-transform: uppercase;}
+
+.dd_primary{color:#337cbb!important;}
+
+#unread_count{display: none;}
+
+footer p{margin:10px 0px;}
+
+@media (min-width: 768px) {
+    .center-menu{text-align: center !important;width: 100%!important;}
+}
+
+#user-bal{float:right;font-size:16px;padding-right:3px;}
+
+#currency-label{font-size:13px;  float:right; padding-left:2px;}
+
+.overflow-hide{overflow: hidden;}
+
+/****************************
+Global wait dialog start
+****************************/
+
+/*
+*Display wait overlay Css
+*/
+
+.display_wait_overlay{
+    display: none;
+    position: fixed;
+    width:100%;
+    height: 100%;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    background: url("/static.qpayi.com/web/assets/images/fancybox_overlay.png") repeat;
+    z-index: 9999;
+}
+
+.display_wait_overlay .dw_overlay{
+    z-index: 10000;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -khtml-border-radius: 3px;
+    width: 48px;height: 48px;padding: 5px;border-radius: 5px;line-height: 48px;vertical-align: middle;margin-top: -24px;margin-left: -24px;
+}
+.display_wait_overlay .dw_overlay img{
+    width:32px;
+}
+
+.pointerClass:hover{
+    text-decoration: none;
+    cursor: pointer
+}
+/****************************
+Global wait dialog end
+****************************/
+thead,.table > thead > tr > th{background: #eee;font-weight: 100;text-transform: uppercase}
+.dataTables_info, .dataTables_length, .ui-corner-tr {
+    display:none !important;
+}
+
+.fg-toolbar{background: #eee;overflow: hidden}
+
+.datepicker{z-index: 1000!important}
+.datepicker table tr th {background-color: #fff}
+.btm_bx{position:fixed; bottom:0; padding:20px 0; background:#000000; border:1px #D1D1D1 solid; font-size:16px; text-align:center; color:#fff; width:100%; display:none;opacity: .9;}
+.rt{width:6%; float:right; text-align:center;}
+
+.show-on-hover:hover > ul.dropdown-menu {
+    display: block;
+}

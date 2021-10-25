@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>upload KYC</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" />
+
+    <link rel="stylesheet" media="" href='css/material-dashboard.min.css'>
+    <link rel="stylesheet" media="" href='css/dashboard.css'>
+    <link rel="stylesheet" media="" href='css/slidermenu.css'>
+    <link rel="stylesheet" media="" href='css/media-query.css'>
+    <link rel="stylesheet" media="" href='css/uploadKYC.css'>
+    
+    
+</head>
+
+<body style="background:#f4f7fa;">
+
+    <div id="header" class="">
+        <div class="container" style="position:relative;">
+            <a href="#home">
+                <div id="logo" class=""></div>
+
+            </a>
+            <ul id="menu" class="">
+                <li class="">
+                    <span class="clientName" style="color:#000;font-weight:400;">John Doe</span>
+
+                    <br>
+                    <span style="color:#000;font-weight:400;">Enabler Code</span>
+                    <span>:</span>
+                    <span style="color: #73879C;">2xVGDA1</span>
+
+                </li>
+                <li style="border-right:1px solid #ddd;">
+                    <span>
+								<a href="#" class="user-profile " data-toggle="">
+								<img src="images/img.png" alt="">
+
+							  </a>
+
+								</span>
+
+                </li>
+
+                <li><a href="#" class="logout">Logout</a></li>
+
+            </ul>
+
+            <nav class="">
+                <a href="" id="menuToggle" title="hide navigation" class=""><span class="navOpen"></span></a>
+
+                <a href="#" onclick="closeSidebar(this)">Buy Token</a>
+                <a href="#" onclick="closeSidebar(this)">Logout</a>
+
+            </nav>
+        </div>
+    </div>
+    <div class="section Invite">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-6" style="background:#323e48;">
+                    <h2 class="totalToken">29,500 <span style="font-weight:normal">Nexxo Tokens</span></h2></div>
+                <div class="col-sm-6 title" style="background:#05abc7;">
+                    <button type="button" class="btn btn-primary InviteDetails"> Invite Friends, earn 500 coins</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section navbar_custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-trophy">&nbsp;Bonus</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-database">&nbsp;Buy Token</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="fa fa-share-alt">&nbsp;Refer Friend</i></a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#"><i class="fa fa-user">&nbsp;Upload KYC</i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid main_container" style="">
+
+        <div class="container">
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-default cardBorderRadius">
+                        <div class="card-body" style="">
+							<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<form class="">
+										
+										<h4 class="py-2">Enter your passport details</h4>
+										
+										  <div class="form-group">
+                                            
+                                            <input type="text" class="form-control txtbox" id="" placeholder="Passport Number">
+											<div class="help-inline"></div>
+                                            <div class="help-block"></div>
+                                        </div>
+										
+										<div class="form-group row">
+											
+											<div class="col-md-4 py-2 MonthDiv" style="padding-left:0px;">
+											<input type="text" class="form-control txtbox" id="" placeholder="Month">
+											
+											</div>
+											
+											<div class="col-md-4 py-2 DateDiv" style="padding-left:0px;">
+											<input type="text" class="form-control txtbox" id="" placeholder="Date">
+											
+											</div>
+											
+											<div class="col-md-4 py-2 YearDiv" style="padding-left:0px;padding-right:0px;">
+											<input type="text" class="form-control txtbox" id="" placeholder="Year">
+											
+											</div>
+                                            
+                                            
+											
+											
+											
+                                        </div>
+										
+										
+
+                                       
+                                    </form>
+								
+								</div>
+								<div class="col-md-6" style="text-align:center;">
+									<div class="dropzone"></div>
+								
+								</div>
+							
+							
+							</div>
+							
+							<div class="row">
+								<div class="col-md-12">
+								
+									<div class="form-group" style="margin:0px;">
+											
+											
+                                    <button type="button" id="personalInfoBtn" class="btn btn-block btn-md btn-primary" tabindex="4" onclick="">Submit</button>
+                                
+											
+										</div>
+								
+								
+								</div>
+								
+							
+							
+							</div>
+							
+							
+							
+							</div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+	
+	<script type="text/javascript" src="js/dropzone.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (max-width: 1200px) {
+
+ul#menu {
+    font-size: 14px;
+}
+
+ul#menu li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.solution-col {
+    padding: 20px;
+}
+
+@media (max-width: 991px) {
+
+h1 {font-size:30px;}
+h2 {font-size:23px;}
+h3 {font-size:18px;}
+
+#header.bgChange {height:90px;}	
+	
+.participate {display: none;}
+	
+ul#menu {
+    display:none;
+}
+
+.home-container {
+	width:100%;
+}
+
+.displaySection {
+    padding: 18px 27px;
+}
+
+.lng-container {
+	display:none;
+}
+	
+.solution-col {
+    padding: 20px 0;
+}
+
+
+}
+
+
+@media (max-width: 768px) {
+	
+p {font-size:13px;}
+h4 {font-size:14px;}
+	
+#home {
+	height:1050px;
+}
+
+#home h1 {font-size:30px;}
+
+.home-container {text-align:center;}
+/*-Arpit-*/
+.participate-now-btn{width:90%;}
+
+
+.blankcol {display:none;}
+
+.solution-col {
+    height: 345px;
+	padding:10px;
+}
+
+.subscribe-container {
+    width:100%;	
+}
+
+.copyright {float:none; text-align:center; margin-bottom:15px;}
+
+.terms {float:none; text-align:center;}
+
+}
+
+@media (max-width: 500px) {	
+
+
+.displaySection {
+    padding: 15px 18px;
+}
+
+.numberDisplay {
+	font-size: 32px;
+}
+
+.periodDisplay {
+  font-size: 11px;
+}
+	
+.solution-col {
+    height: 280px;
+}
+
+.media-slider .flex-direction-nav .flex-next {
+    top:inherit;
+	bottom:-52px;
+}
+
+.media-slider .flex-direction-nav .flex-prev {
+	top:inherit;
+	bottom:-52px;
+}
+
+.articles-slider .flex-direction-nav .flex-next {
+    top:inherit;
+	bottom:-52px;
+}
+
+.articles-slider .flex-direction-nav .flex-prev {
+	top:inherit;
+	bottom:-52px;
+}
+	
+.team-circle {
+    width: 100%;
+    height: auto;
+}
+
+.participation-s a {
+    padding: 8px;
+    font-size: 11px;
+}
+	
+.earntoken {
+    padding-left: 25px;
+}
+	
+}
+
+@media (max-width: 400px) {	
+	
+.solution-col {
+    height: 260px;
+}
+	
+}
+

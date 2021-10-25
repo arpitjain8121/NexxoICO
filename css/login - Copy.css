@@ -1,0 +1,112 @@
+ body {
+	font-family: 'Roboto', sans-serif;
+	color:#333;
+	font-size:14px;
+	line-height:1;
+	
+}
+
+body{background: url(../images/background.png);background-size: 100% auto;}
+
+ body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+ #img_logo {max-height: 100px;padding: 15px;padding-left: 50px;}
+ 
+.hr-block{width: 100%;border-top: 1px solid #ccc;margin-top:0px;}
+
+.hr-curious-blue {border-color: #ccc;}
+.clearfix {margin: 30px 0;}
+
+h1{font-size:2.2rem;}
+
+.cardBorderRadius{border-radius:20px;}
+
+.signHeading{color:#05abc7;}
+
+#SignIn{padding:9px 15px;width:54%;background:#05abc7;border-color:#05abc7;}
+
+#signupButton{padding:9px 15px;width:54%;background:#05abc7;border-color:#05abc7;}
+
+.nexxoBtn{padding:9px 15px;width:54%;background:#05abc7;border-color:#05abc7;}
+
+
+.txtbox{font-size:13px;border:1px solid #808495; margin-left:20px;width:90%;}
+
+  .txtbox::-webkit-input-placeholder {color: #808495 !important; }
+ .txtbox::-moz-placeholder {color: #808495 !important;}
+ .txtbox:-ms-input-placeholder {color: #808495 !important;}
+ .txtbox:-moz-placeholder {color: #808495 !important;}
+
+#field_email{margin-top:22px;}
+#field_password{margin-top:22px;}	
+.startPage{padding-top: 4%;}
+
+.pageRedirect{color:#05abc7;text-decoration:underline}
+.upscreen{margin-top:22px;}
+.verifyMessage{color: #333;line-height: 1.2;padding-top: 10px;font-size: 16px;}
+.referral_header {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#header {
+    position: fixed;
+    height: 100px;
+    z-index: 1000;
+    width: 100%;
+    transition: 0.8s;
+}
+
+ul#menu {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    float: right;
+    transition: 0.8s;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+ul#menu li {
+    display: inline-block;
+    margin-left: 40px;
+}
+ul#menu li a {
+    color: #000;
+    transition: 0.3s;
+}
+ul#menu li a:hover {
+    color: #00abc7;
+    text-decoration: none;
+}
+
+.logout {
+    padding: 6px 40px;
+    background:#fff;
+}
+
+#logo {
+    width: 134px;
+    height: 75px;
+    float: left;
+    margin-top: 10px;
+    transition: 0.8s;
+    background-image: url(../images/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+ 
+@media (max-width: 767px) {
+	#img_logo{padding-left:10px;}
+	#SignIn{width:100%;}
+	.txtbox{width:100%;margin-left:0px;}
+	.nexxoBtn{width:100%;}
+	
+	}

@@ -1,0 +1,44 @@
+.txtbox::-webkit-input-placeholder {padding-left:10px !important; }
+ .txtbox::-moz-placeholder {padding-left:10px !important;}
+ .txtbox:-ms-input-placeholder {padding-left:10px !important;}
+ .txtbox:-moz-placeholder {padding-left:10px !important;}
+ 
+ .txtbox{padding-left:10px;}
+ 
+#currencyVal{padding-left:10px;}
+
+#buyTokensBtn {
+    background: #00abc7;
+    color: #fff;
+    border-color: #00abc7 !important;
+    border: 2px solid #00abc7;
+    border-radius: 4px;
+    width: 20%;
+    margin: auto;
+    margin-top: 10px;
+	margin-bottom: 10px !important;
+	
+	font-size:20px;
+}
+
+.logo-size-address{
+	height: 350px;
+    width: 350px;
+}
+
+#copyBTCWalletAddr {
+    padding: 7px 30px;
+    margin-top: 0px;
+    background: #00abc7;
+    border-color: #00abc7;
+    color: #fff;
+}
+
+#copyETHWalletAddr {
+    margin-top: 0px;
+    padding: 7px 30px;
+    background: #00abc7;
+    border-color: #00abc7;
+    color: #fff;
+}
+.RowAlignment{margin:0px;}

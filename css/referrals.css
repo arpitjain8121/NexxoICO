@@ -1,0 +1,95 @@
+ body {
+	font-family: 'Roboto', sans-serif;
+	color:#333;
+	font-size:14px;
+	line-height:1;
+	
+}
+#referralSubmit {
+    margin-top: 20px;
+}
+
+.form-inline {
+    padding: 6px;
+    /* margin: 50px 0px !important; */
+}
+
+
+
+.standard-button {
+    background: #02adea;
+    border: navajowhite;
+    color: #fff;
+    font-size: 21px;
+    outline: none!important;
+    padding: 5px 12px;
+    box-shadow: 1px 1px 1px #898a8a;
+    border-radius: 5px;
+    font-family: helvetica, sans-serif;
+}
+
+.plus_button{
+    background: #00c57f !important;
+    border: #00c57f !important;
+    padding: 13px 28px;
+    width: 50%;
+    float: right;
+}
+
+.errorMsg {
+    text-align: right;
+    color: red;
+}
+
+#errorMessage {
+    display: none;
+	font-size:18px;
+	
+}
+
+.txtbox::-webkit-input-placeholder {padding-left:0px !important; }
+ .txtbox::-moz-placeholder {padding-left:0px !important;}
+ .txtbox:-ms-input-placeholder {padding-left:0px !important;}
+ .txtbox:-moz-placeholder {padding-left:0px !important;}
+ 
+ 
+
+ul#myTab li a.active{color:#00abc7 !important;border-top:2px solid #00abc7 !important;border:2px solid #00abc7 !important;border-radius:0px !important;text-transform: none;font-size: 17px;}
+
+ul#myTab li a{background:#f9fbfc;color:#a3a9ad !important;font-size:14px;text-transform: none;font-size: 17px;}
+ 
+ul#myTab li {padding:0px;border-bottom:0px;}
+
+
+.rd-mailform-inline {display: -webkit-flex;display: flex; -webkit-flex-direction: row;-ms-flex-direction: row;
+    flex-direction: row; -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-align-items: stretch; -ms-flex-align: stretch;  align-items: stretch;  margin: 0px 12px;}
+.rd-mailform-inline input {padding: 10px 22px !important
+; }
+.rd-mailform-inline .form-control {height: 40px;border-color: #00;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;border-top-left-radius: 0px;border-top-right-radius: 0px;padding: 6px 21px;}	
+
+.btn-picton-blue {
+            background: #ecf1f7 !important;
+            border-color: #ecf1f7 !important;
+            color: #949ea9 !important;
+            height: 38px;
+            border-radius: 0px;
+            font-size: 14px;
+            padding: 1px 56px !important;
+            font-weight: 500;
+            margin:-1px -1px;
+            }
+
+.btn-picton-blue:hover{background: #00abc7;
+            border-color: #00abc7;}		
+			
+.input-group-btn{padding:0px !important;}	
+
+input#copy-input {
+    padding-left: 10px;
+}		
+.txtbox{padding-left:10px;}
+@media (max-width: 767px) {
+.btn-picton-blue {padding: 1px 15px !important;}
+.plus_button{width:100%;}
+
+}

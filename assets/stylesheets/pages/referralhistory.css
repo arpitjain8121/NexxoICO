@@ -1,0 +1,8 @@
+.sub-text-table {
+    font-size: 10px;
+}
+
+#dataTableReferHistory tbody td {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}

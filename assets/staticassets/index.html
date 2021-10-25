@@ -1,0 +1,1734 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Nexxo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap & Jquery -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="/assets/staticassets/css/timeline.css" rel="stylesheet" type="text/css" />
+<link href="/assets/staticassets/css/jQuery.countdownTimer.css" rel="stylesheet">
+<link href="/assets/staticassets/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/assets/staticassets/css/animate.css" rel="stylesheet" type="text/css" />
+<link href="/assets/staticassets/css/magnific-popup.css" rel="stylesheet">
+<link href="/assets/staticassets/css/sidemenu.css" rel="stylesheet">
+<link href="/assets/staticassets/css/flexslider.css" rel="stylesheet" type="text/css" />
+<link href="/assets/staticassets/css/media-queries.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="/assets/staticassets/img/favicon.png"/>
+
+<script src="/assets/staticassets/js/jquery.magnific-popup.min.js"></script>	
+
+<style>
+
+.white-popup {
+	position: relative;
+	background: #fff;
+	width: auto;
+	max-width: 945px;
+	margin: 25px auto;
+	padding: 50px 25px;
+	border-radius:20px;
+}
+
+.white-popup h3 {color:#00abc7;}
+.white-popup h4 {font-weight:700;}
+
+.mfp-bg {
+	background: #333;
+}
+.mfp-close-btn-in .mfp-close {
+	color: #00abc7;
+}
+.mfp-close {
+	font-size: 36px;
+}
+	
+.timeline-active:before {
+    background: #00abc7;
+}
+	
+.timeline-active:after {
+    background: #00abc7;
+}
+
+</style>	
+
+<!-- Add sidemenu -->
+<script>
+(function($){
+	// Menu Functions
+	$(document).ready(function(){
+  	$('#menuToggle').click(function(e){
+    	var $parent = $(this).parent('nav');
+      $parent.toggleClass("open");
+      var navState = $parent.hasClass('open') ? "hide" : "show";
+      $(this).attr("title", navState + " navigation");
+			// Set the timeout to the animation length in the CSS.
+			setTimeout(function(){
+				console.log("timeout set");
+				$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+			}, 200);
+    	e.preventDefault();
+  	});
+  });
+})(jQuery);
+
+</script>
+
+ <script>
+
+          function closeSidebar(e) {
+            var obj = event.target;
+            var $parent = $('nav');
+            $parent.toggleClass("open");
+            var navState = $parent.hasClass('open') ? "hide" : "show";
+            $(obj).attr("title", navState + " navigation");
+            setTimeout(function () {
+              $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+            }, 200);
+          }
+
+   </script>
+	
+</head>
+
+<body>
+	
+<!------------ Navigation start ------------>
+<div id="header">
+  <div class="container" style="position:relative;"><a href="#home">
+    <div id="logo"></div>
+    </a>
+    <ul id="menu">
+      <li><a href="#problem">Problems</a></li>
+      <li><a href="#solution">Solution</a></li>
+      <li><a href="#tokensale">Token Sale</a></li>
+      <!--<li><a href="#media">Media</a></li>-->
+	  <li><a href="#roadmap">Roadmap</a></li> 
+	  <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!--<div class="lng-container">
+      <div class="dropdown">
+          <a href="">EN &nbsp;&nbsp;<i class="fa fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+            <p><a href="#">CN</a></p>
+          </div>
+      </div> 
+      <!--<a href="#" class="lng lng-active">EN</a> &nbsp;<a href="index-kr.php" class="lng">KR</a>
+    </div>-->
+	<div class="participate">
+		<span style="font-weight: 700;font-style: italic;">Earn Bonus Tokens</span> &nbsp;&nbsp;&nbsp;<a href="/register-200000" class="btn participate-btn">Participate Now</a>
+	</div>
+    <nav> 
+      <a href="" id="menuToggle" title="show menu"><span class="navClosed"></span></a> 
+      <a href="#problem" onclick="closeSidebar(this)">Problem</a>
+      <a href="#solution" onclick="closeSidebar(this)">Solution</a>
+	  <a href="#tokensale" onclick="closeSidebar(this)">Token Sale</a>
+      <!--<a href="#media" onclick="closeSidebar(this)">Media</a>-->
+	  <a href="#roadmap" onclick="closeSidebar(this)">Roadmap</a>
+      <a href="#team" onclick="closeSidebar(this)">Team</a>
+      <a href="#contact" onclick="closeSidebar(this)">Contact</a>
+	  <div style="width: 100%; background:#eeeeee; height: 1px; margin-bottom:20px;"></div>
+	  <div class="earntoken">Earn Bonus Tokens</div>
+	  <div class="participation-s">
+		<a href="nexxo.io/register-200000">Participate Now</a>
+	  </div>
+      <!--<div class="lng-mobile">
+        <a href="index-kr.php">KR</a> &nbsp; <a href="index-zh.php">CN</a> 
+      </div>-->
+    </nav>
+  </div>
+</div>
+<!------------ Navigation end ------------>
+	
+<!------------ Home banner start ------------>
+<div id="home">
+  <div class="background-wrap">
+    <video id="video-bg-elem" preload="auto" autoplay loop muted>
+      <source src="/assets/staticassets/main-bg-720.mov" type="video/mp4">
+      Video not supported </video>
+  </div>
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-8 v-pad">
+          <div class="home-container">
+            <h2 class="wow fadeInLeft">The World’s First Global, Blockchain-Powered</h2>
+            <h1 class="wow fadeInLeft">Small Business Banking Platform</h1><br>
+            <h3 class="wow fadeInLeft" style="font-weight:300;">PRE-SALE STARTS IN:</h3>
+            <br>
+            <div class="countdown wow fadeInLeft" data-wow-delay="0.9s">
+              <div id="countdowntimer">
+                <span id="future_date"></span> &nbsp;<a href="/register-200000" class="btn participate-now-btn">Participate Now</a>
+              </div>
+            </div>
+            <br><br>
+            <h4 class="wow fadeInLeft">Be the first to hear about our news, updates and announcements</h4>
+            <br>
+            <input type="text" class="input-style home-input wow fadeInLeft" name="EMAIL" id="subscription_email" placeholder="Your Email Address " required="">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 v-pad wow fadeInRight" data-wow-delay="0.3s" style="text-align:center;">
+		  <div class="home-video">
+          <div style="border-radius:15px; overflow:hidden;"><a href="https://www.youtube.com/watch?v=od_CUz40EDk" class="video-pop-up"><img src="/assets/staticassets/img/video.jpg" alt=""></a></div>
+          <br><br><br>
+          <a href="/assets/staticassets/nexxo-whitepaper.pdf" target="_blank" class="btn" style="width:100%;">Whitepaper</a>
+          <br><br><br>
+          <p><b>Follow Us</b>  &nbsp; &nbsp; &nbsp;<a href="http://t.me/nexxoint" target="blank"><i class="fa fa-paper-plane" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp;<a href="https://twitter.com/NexxoInt" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp;<a href="https://www.facebook.com/nexxoint/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>  &nbsp; &nbsp; &nbsp;<a href="https://www.linkedin.com/company/nexxoint/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp;<a href="https://www.youtube.com/channel/UCd44NmVcZV
+B2InBVWgkx1hQ?view_as=subscriber" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp;<a href="mailto:contact@nexxo.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!------------ Home banner end ------------>
+<!--
+<div class="ico-logo">
+  <div class="container">
+    <div class="col-md-3 col-sm-3 col-xs-6 v-pad wow fadeInLeft" data-wow-delay="0.3s">
+      <img src="/assets/staticassets/img/logo-ico-bench.png" alt="">
+      <br><br>
+      <p>Rate <span style="color:#00abc7; font-size:28px;">4.4</span>/5.0</p>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6 v-pad wow fadeInLeft">
+      <img src="/assets/staticassets/img/logo-ico-bench.png" alt="">
+      <br><br>
+      <p>Rate <span style="color:#00abc7; font-size:28px;">4.8</span>/5.0</p>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6 v-pad wow fadeInRight">
+      <img src="/assets/staticassets/img/logo-forico.png" alt="">
+      <br><br>
+      <p>Rate <span style="color:#00abc7; font-size:28px;">4.7</span>/5.0</p>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6 v-pad wow fadeInRight" data-wow-delay="0.3s">
+      <img src="/assets/staticassets/img/logo-ico-bench.png" alt="">
+      <br><br>
+      <p>Rate <span style="color:#00abc7; font-size:28px;">9.2</span>/10</p>
+    </div>
+  </div>
+</div>-->
+
+<!------------ Problem start ------------>
+<section id="problem" class="pattern-bg">
+  <div class="container">
+    <div class="title-bullet"><div class="bullet"></div></div>
+    <h1>Problem</h1>
+    <div style="clear:both;"></div>
+    <br>
+    <h2>Small businesses need financial services, but large commercial bankers say ‘No!’</h2>
+    <br>
+    <img class="wow fadeInUp" src="/assets/staticassets/img/chart-problems.png" alt="">
+    <br><br><br>
+    <div class="row">
+      <div class="col-md-4 col-sm-4 v-pad">
+        <h3>No Collateral - <span style="color:#00abc7;">44%</span></h3>
+        <br>
+        <p>Bankers need collateral to mitigate risk. However, most small businesses don’t have any collateral assets, other than their own business. This is the primary reason bankers say ‘No’.</p>
+      </div>
+      <div class="col-md-4 col-sm-4 v-pad">
+        <h3>Too much risk for too little return - <span style="color:#00abc7;">19%</span></h3>
+        <br>
+        <p>Commercial banks require a certain threshold of low risk and profitability per account to engage in a profitable business relationship. Unfortunately, most small businesses cannot reach such a threshold, thus causing banks to decline entering such a high-risk relationship.</p>
+      </div>
+      <div class="col-md-4 col-sm-4 v-pad">
+        <h3>Lack of credit history - <span style="color:#00abc7;">17%</span></h3>
+        <br>
+        <p>This is a “chicken and egg” situation, where small businesses cannot get credit from commercial bankers, and commercial bankers cannot give credit unless the business has a credit history. </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-6 v-pad">
+        <h3>No significant deposits - <span style="color:#00abc7;">12%</span></h3>
+        <br>
+        <p>Banks make money from interest generated by large deposits. But, small businesses do not have extra cash flow and extra savings to deposit with banks, as they require all their cash to support the daily cash flow requirements of their businesses. Without large cash deposits and little revenue from interest, banks cannot say ‘Yes’. </p>
+      </div>
+      <div class="col-md-6 col-sm-6 v-pad">
+        <h3>No audited financials - <span style="color:#00abc7;">8%</span></h3>
+        <br>
+        <p>Large commercial bankers require full financial audits prior to offering their banking services. However, bankers do not have the bandwidth to conduct such audits, as they require much time and effort. As a result, they request the small business to submit multiple years of audited financials from a reputable audit firm. Unfortunately, most small businesses do not have such data, and more importantly cannot afford the high costs charged by large audit firms to prepare full financial audits. </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ Problem end ------------>
+
+<!------------ Solution start ------------>
+<section id="solution" class="line-bg">
+  <div class="container">
+    <div style="width:200px; margin:0 auto;">
+      <div class="title-bullet"><div class="bullet"></div></div>
+      <h1>Solution</h1>
+      <div style="clear:both;"></div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+		<a href="#iban" class="open-popup-link">
+        <div class="solution-col wow fadeInLeft" data-wow-delay="0.3s">
+          <img src="/assets/staticassets/img/solution-1.png" alt=""><br><br>
+          <h4>The NEXXO IBAN (International Bank Account Number)</h4>
+        </div>
+		</a>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+		<a href="#mobile-wallet" class="open-popup-link">
+        <div class="solution-col wow fadeInLeft">
+          <img src="/assets/staticassets/img/solution-2.png" alt=""><br><br>
+          <h4>The NEXXO <br> Mobile-Wallet</h4>
+        </div>
+		</a>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+		<a href="#cash-management-solution" class="open-popup-link">
+        <div class="solution-col wow fadeInRight">
+          <img src="/assets/staticassets/img/solution-3.png" alt=""><br><br>
+          <h4>The NEXXO Bank Account Cash Management Solution</h4>
+        </div>
+		</a>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad" >
+		<a href="#payroll-solution" class="open-popup-link">
+        <div class="solution-col  wow fadeInRight" data-wow-delay="0.3s">
+          <img src="/assets/staticassets/img/solution-4.png" alt=""><br><br>
+          <h4>The NEXXO <br> Mobile-Pay Roll</h4>
+        </div>
+		</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+		<a href="#financing-solution" class="open-popup-link">
+        <div class="solution-col wow fadeInLeft" data-wow-delay="0.3s">
+          <img src="/assets/staticassets/img/solution-5.png" alt=""><br><br>
+          <h4>The NEXXO <br> Micro-Financing Solution</h4>
+        </div>
+		</a>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+		<a href="#pos-solution" class="open-popup-link">
+        <div class="solution-col wow fadeInLeft">
+          <img src="/assets/staticassets/img/solution-6.png" alt=""><br><br>
+          <h4>The NEXXO <br> Smart-Android PCI Certified Point Of Sale (POS) Solution</h4>
+        </div>
+		</a>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+		<a href="#ecommerce-solution" class="open-popup-link">
+        <div class="solution-col wow fadeInRight">
+          <img src="/assets/staticassets/img/solution-7.png" alt=""><br><br>
+          <h4>The NEXXO <br> small business <br> e-commerce Solution</h4>
+        </div>
+		</a>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+		<a href="#e-invoicing" class="open-popup-link">
+        <div class="solution-col wow fadeInRight" data-wow-delay="0.3s">
+          <img src="/assets/staticassets/img/solution-8.png" alt=""><br><br>
+          <h4>The NEXXO <br> Small Business <br> e-Invoicing Solution</h4>
+        </div>
+		</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-3 v-pad blankcol">
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+		<a href="#secure-api" class="open-popup-link">
+        <div class="solution-col wow fadeInUp">
+          <img src="/assets/staticassets/img/solution-9.png" alt=""><br><br>
+          <h4>The NEXXO secure API Integration Platform</h4>
+        </div>
+		</a>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+		<a href="#fully-complies" class="open-popup-link">
+        <div class="solution-col wow fadeInUp">
+          <img src="/assets/staticassets/img/solution-10.png" alt=""><br><br>
+          <h4>Fully complies with KYC, AML and OFAC.</h4>
+        </div>
+		</a>
+      </div>
+      <div class="col-md-3 col-sm-3 v-pad blankcol">
+      </div>
+    </div>
+  </div>
+</section>
+<div class="line-bg" style="text-align:center;">
+  <section class="line-dark">
+  <div class="container">
+    <h2 style="font-weight:700;">The NEXXO Blockchain Technology : <span style="color:#00abc7;">Powered by IBM™ Hyperledger</span></h2>
+    <div class="heading-separator">
+      <div class="heading-line"></div>
+      <div class="title-bullet-s"><div class="bullet-s"></div></div>
+      <div class="heading-line"></div>
+      <div style="clear:both;"></div>
+    </div>
+    <h3>WHY IBM™ HYPERLEDGER</h3>
+    <br>
+    <h4>We believe that IBM™ Hyperledger blockchain technology is the right platform for servicing our targeted small business verticals. This is mainly because of the following characteristics and factors:</h4>
+    <br><br>
+    <div class="row" style="text-align:left;">
+      <div class="col-md-6 col-sm-6 v-pad wow fadeInLeft">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-3">
+            <img src="/assets/staticassets/img/icon-tech-decentralized.png" alt="">
+          </div>
+          <div class="col-md-9 col-sm-8 col-xs-9">
+            <h4><b>Decentralized computing</b></h4>
+            <p>By using a blockchain decentralized computing (processing) platform, our banking servers allocate processing power across multiple servers instead of one single server. Such architecture helps our banking servers achieve a lower system cost, higher redundancy, and better uptime.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 v-pad wow fadeInRight">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-3">
+            <img src="/assets/staticassets/img/icon-tech-distributed.png" alt="">
+          </div>
+          <div class="col-md- col-sm-8 col-xs-9">
+            <h4><b>Distributed Data Ledger</b></h4>
+            <p>By using a blockchain based distributed data ledger, data collected by our consumer and business banking systems are redundantly stored across multiple servers instead of one single database server, thus avoiding a single point of failure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="text-align:left;">
+      <div class="col-md-6 col-sm-6 v-pad wow fadeInLeft">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-3">
+            <img src="/assets/staticassets/img/icon-tech-secure.png" alt="">
+          </div>
+          <div class="col-md-9 col-sm-8 col-xs-9">
+            <h4><b>Secured data and transaction</b></h4>
+            <p>Blockchain is inherently encrypted and secured with every transaction block, thus improving system security and information protection, a very important requirement in banking and financial services.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 v-pad wow fadeInRight">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-3">
+            <img src="/assets/staticassets/img/icon-tech-immutable.png" alt="">
+          </div>
+          <div class="col-md- col-sm-8 col-xs-9">
+            <h4><b>Immutable (tamper-proof) transactions</b></h4>
+            <p>A ‘must-have’ requirement when building and operating banking applications is prohibiting any party from altering any document, transaction detail or history. Inherently, blockchain transactions are intrinsically immutable, which helps us offer highly enhanced audit tracking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="text-align:left;">
+      <div class="col-md-6 col-sm-6 v-pad wow fadeInLeft">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-3">
+            <img src="/assets/staticassets/img/icon-tech-auditable.png" alt="">
+          </div>
+          <div class="col-md-9 col-sm-8 col-xs-9">
+            <h4><b>Auditable Transactions & Audit Trail</b></h4>
+            <p>Due to immutability of data.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 v-pad wow fadeInRight">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-3">
+            <img src="/assets/staticassets/img/icon-tech-smartcontract.png" alt="">
+          </div>
+          <div class="col-md- col-sm-8 col-xs-9">
+            <h4><b>Smart Contract driven application platform</b></h4>
+            <p>This feature is very important for our business, especially when dealing with electronic invoices, e-commerce transactions, loans, or card transactions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="text-align:left;">
+      <div class="col-md-6 col-sm-6 v-pad wow fadeInLeft">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-3">
+            <img src="/assets/staticassets/img/icon-tech-peertopeer.png" alt="">
+          </div>
+          <div class="col-md-9 col-sm-8 col-xs-9">
+            <h4><b>Peer-to-Peer Infrastructure</b></h4>
+            <p>We strongly believe that the future of small business banking will include many peer-to-peer products; an obvious example is peer-to-peer small business lending.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6">
+      </div>
+    </div>
+  </div>
+  </section>
+</div>
+<section class="line-bg">
+  <div class="container">
+    <div style="text-align:center;">
+    <h2 style="font-weight:700;">The NEXXONet<br> <span style="color:#00abc7;">Connecting all the local blockchains to form a global banking blockchain platform </span></h2>
+    <div class="heading-separator">
+      <div class="heading-line"></div>
+      <div class="title-bullet-s"><div class="bullet-s"></div></div>
+      <div class="heading-line"></div>
+      <div style="clear:both;"></div>
+    </div>
+    <img class="wow fadeInUp" src="/assets/staticassets/img/map.png" alt="" data-wow-delay="0.6s">
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-4 v-pad">
+        <h4 style="font-weight:700;">NEXXONet, a global, multi-country, decentralized banking blockchain based on linking all local/private (intra-country) blockchains </h4>
+        <br>
+        <p>Some blockchain platforms believe that they can force a global blockchain onto local governments, without being locally licensed or regulated. However, we believe that a true global banking blockchain can only be built from the ground up, by linking locally regulated blockchains onto a globally compliant blockchain.</p>
+        <br>
+        <p>As a result, we believe that the most realistic global blockchain banking model must be built form the ground up based on private blockchains. </p>
+      </div>
+      <div class="col-md-4 col-sm-4 v-pad">
+        <h4 style="font-weight:700;">Why link multiple private blockchains?</h4><br>
+        <p>Each country will have its own private blockchain that is compliant to regulations of each local monetary authority. Guidelines such as KYC, AML, OFAC, or risk management standards must be adhered to by NEXXO, one local country at a time. This is because in having a ‘one size fits all’ solution, it is not possible to be compliant across different regulatory bodies.</p>
+        <br>
+        <p>Furthermore, when being audited by a local central bank or local government body, such entities would not allow another government to access its internal data, nor allow a foreign entity to monitor internal businesses or consumer transactions.</p>
+      </div>
+      <div class="col-md-4 col-sm-4 v-pad">
+        <h4 style="font-weight:700;">By linking all local intra-country blockchains onto a global blockchain, we will achieve the world’s first globally compliant blockchain powered banking platform focused on small businesses.</h4>
+        <br>
+        <p>Our objective is to build a highly versatile local/global banking blockchain platform based on legal, secure, and compliant fundamentals. This approach enables us to interlink all local banking networks to deliver the world’s first globally (internationally) compliant banking platform, focused on servicing micro and small businesses.</p>
+        <br>
+        <p>Such a platform can be initially leveraged to service local small business markets, but later can be used to facilitate cross-border commerce. This could include simplifying other international banking services, such as cross-border letters of credit, or offering instantaneous international remittances.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="line-bg">
+<section class="line-dark">
+  <div class="container">
+    <h2 style="font-weight:700; text-align:center;">The NEXXO  <span style="color:#00abc7;">Utility Token</span></h2>
+    <div class="heading-separator">
+      <div class="heading-line"></div>
+      <div class="title-bullet-s"><div class="bullet-s"></div></div>
+      <div class="heading-line"></div>
+      <div style="clear:both;"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-6 v-pad nexxo-token" style="text-align:center;">
+        <img class="wow fadeInLeft" src="/assets/staticassets/img/token.png" alt="">
+      </div>
+      <div class="col-md-6 col-sm-6 v-pad">
+        <h4>NEXXO is issuing an ERC20 token to reward enablers that help grow the NEXXO network as well as offer liquidity to traders and speculators that trade the NEXXO token on various crypto exchanges.</h4>
+        <br><br>
+        <h4 style="font-weight:700;">The NEXXO token has three main objectives, summarized as follows:</h4>
+        <br>
+        <table style="width:100%;">
+          <tr valign="top">
+            <td style="width:60px;"><div class="number-list">1</div></td>
+            <td><p><b>To reward “enablers”, where enablers are commissioned and trained parties that promote, market, and sell NEXXO solutions into their local small business communities. NEXXO will then invoice customers introduced by enablers and pay them a portion of the fees collected from the small business customers.</b></p></td>
+          </tr>
+          <tr valign="top">
+            <td style="width:60px;"><div class="number-list">2</div></td>
+            <td><p><b>To offer liquidity and gains to NEXXO token traders and speculators; that trade the NEXXO token on various crypto exchanges.</b></p></td>
+          </tr>
+          <tr valign="top">
+            <td style="width:60px;"><div class="number-list">3</div></td>
+            <td><p><b>To offer various utility services such as coupons and discounts, to NEXXO token holders.</b></p></td>
+          </tr>
+         </table>
+      </div>
+    </div>
+    <br><br>
+    <h4 style="font-weight:700;">NEXXO enablers: Just like crypto miners, they are rewarded in NEXXO Token for growing the Network</h4>
+    <br>
+    <p><b>Just like in other crypto platforms, miners are rewarded in tokens for processing transaction blocks that sustain the blockchain ecosystem; NEXXO rewards “enablers” in tokens for investing time and effort to help grow the NEXXO network. Enablers are independent sales organizations, either individual or business entities, who are well connected and trusted in their small business communities. They are trained, then encouraged to promote and market NEXXO products and services, and in return, are rewarded for marketing and promoting NEXXO small business banking products.</b></p>
+    <br><br>
+    <div class="enablers wow fadeInLeft" style="text-align:center;"><img src="/assets/staticassets/img/enablers.png" alt=""></div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-6 col-sm-6 v-pad nexxo-img" style="text-align:center;">
+        <img class="wow fadeInLeft" src="/assets/staticassets/img/chart-commision.png" alt="">
+      </div>
+      <div class="col-md-6 col-sm-6 v-pad" style="margin-top:30px;">
+        <h4 style="font-weight:700;">Enablers will have the choice to keep their rewards in tokens or convert to fiat.</h4>
+        <br>
+        <p>Currently, all referral partners are compensated with 100% fiat commissions. However, once our token is live, we shall follow a stepwise process to go from fiat to token. For example, we could start initially with paying commissions as 25% in NEXXO tokens and 75% in fiat, then 50%/50%, then 75%/25%; until we reach our targeted 100% of reward commissions in NEXXO tokens. Furthermore, we shall give our enablers full freedom to keep their commissions in 100% NEXXO tokens or “cash-out” to fiat. This will give enablers the ability to speculate or convert their tokens to fiat at any time. Note that once they convert to fiat, then their funds go onto their NEXXO issued bank card (described in the solutions section).</p>
+      </div>
+    </div>
+    <h4 style="font-weight:700;">NEXXO already has a growing ecosystem of small businesses that it serves. </h4>
+    <br>
+    <p><b>NEXXO token holders can purchase various products and services from many of NEXXO’s 15,000, and growing, small business partners at a discounted rate when paying with NEXXO tokens.</b></p>
+    <br>
+    <p><b>Likewise, small businesses on the NEXXO platform would enjoy NEXXO products and services at a discounted cost when they accept NEXXO tokens as a mode of payment. Token holders, small business partners and the community will benefit greatly from this already well-established ecosystem. Further utility shall be as follows:</b></p>
+    <br>
+    <div class="row">
+      <div class="col-md-6 col-sm-6 v-pad">
+        <table style="width:100%;">
+          <tr valign="top">
+            <td style="width:60px;"><div class="number-list">1</div></td>
+            <td><p><b>KYC’d token holders that reside within jurisdictions, where NEXXO is regulated shall be allowed to apply and receive a Bank Card with an IBAN (International Bank Account) linked to a mobile wallet, where they can convert their NEXXO token holdings to fiat and vice versa.</b></p></td>
+          </tr>
+          <tr valign="top">
+            <td style="width:60px;"><div class="number-list">2</div></td>
+            <td><p><b>KYC’s users, as defined above, shall have the right to easily convert other crypto holdings to NEXXO tokens, to be offered by NEXXO exchange partners and vice versa.</b></p></td>
+          </tr>
+          <tr valign="top">
+            <td style="width:60px;"><div class="number-list">3</div></td>
+            <td><p><b>KYC’d users, defined above, shall receive various coupons, discounts, and loyalty deals from tens of thousands of NEXXO small business merchants, with these deals being displayed onto the token holder’s mobile wallet. This enables token holders to enjoy thousands of fiat dollars in discounts, while having the freedom to pay for such discounts in token or in fiat currency.</b></p></td>
+          </tr>
+         </table>
+      </div>
+      <div class="col-md-6 col-sm-6 v-pad nexxo-img" style="text-align:center;">
+        <img class="wow fadeInRight" src="/assets/staticassets/img/card.png" alt="">
+      </div>     
+    </div>
+  </div>
+</section>
+</div>
+<!------------ Solution end ------------>
+
+<!------------ Tokensale start ------------>
+<section id="tokensale">
+  <div class="container">
+    <div class="title-bullet"><div class="bullet"></div></div>
+      <h1>Token Sale</h1>
+      <div style="clear:both;"></div>
+      <br><br>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 v-pad">
+          <h2 style="font-weight:700;">Tokenomics, Dates, details, and related information</h2>
+          <br><br>
+          <div class="tokensale-table wow fadeInUp">
+          <table style="width:100%;">
+            <tr valign="top">
+              <th class="token-left" style="border-top-left-radius: 10px;"><p>Token Name</p></th>
+              <th style="font-weight:400;"><p>NEXXO Token</p></th>
+            </tr>
+            <tr valign="top">
+              <td  class="token-left"><p>Token Symbol</p></td>
+              <td><p>NEXXO</p></td>
+            </tr>
+            <tr valign="top">
+              <td  class="token-left"><p>Platform</p></td>
+              <td><p>ERC 20</p></td>
+            </tr>
+            <tr valign="top">
+              <td  class="token-left"><p>Token Decimals</p></td>
+              <td><p>18</p></td>
+            </tr>
+            <tr valign="top">
+              <td  class="token-left"><p>Total Token Supply</p></td>
+              <td><p>100,000,000,000</p></td>
+            </tr>
+            <tr valign="top">
+              <td  class="token-left"><p>Token for Sale</p></td>
+              <td><p>60%</p></td>
+            </tr>
+            <tr valign="top">
+              <td  class="token-left"><p>Currency Accepted</p></td>
+              <td><p>ETH, USD</p></td>
+            </tr>
+            <tr valign="top">
+              <td  class="token-left"><p>Token Price</p></td>
+              <td><p>US$0.00083</p></td>
+            </tr>
+            <tr valign="top">
+              <td  class="token-left"><p>Private Sale Date</p></td>
+              <td><p>October 1st 2018 - October 31st 2018</p></td>
+            </tr>
+            <tr valign="top">
+              <td  class="token-left"><p>Pre-sale Date</p></td>
+              <td><p>October 31st 2018 - December 1st 2018</p></td>
+            </tr>
+            <tr valign="top">
+              <td  class="token-left"><p>Public Sale Date</p></td>
+              <td><p>December 1st 2018 - December 31st 2018</p></td>
+            </tr>
+            <tr valign="top">
+              <td  class="token-left"><p>Pre-Sale Bonus</p></td>
+              <td><p>5%</p></td>
+            </tr>
+			<tr valign="top">
+              <td  class="token-left"><p>Soft Cap</p></td>
+              <td><p>US$10,000,000</p></td>
+            </tr>
+            <tr valign="top">
+              <td  class="token-left"><p>Hard Cap</p></td>
+              <td><p>US$44,285,714</p></td>
+            </tr>
+          </table>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 v-pad">
+          <div style="text-align:center;">
+          <div class="tokensale-img wow fadeInRight">
+            <h3>TOKEN ALLOCATION</h3>
+            <br>
+            <p><b>60%</b> for sale</p>
+            <p><b>30%</b> for the company</p>
+            <p><b>10%</b> for the enablers & partners</p>
+            <br>
+            <img src="/assets/staticassets/img/chart-allocation.png" alt=""> 
+          </div>
+          </div>
+          <br><br><br><br>
+          <div style="padding-left:25px;">
+          <h3>USE OF PROCEEDS, TOP 5 EXPENDITURES</h3>
+          <br><br>
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check"></i>
+            <p>Expand into new countries as per plan</p>
+            </li>
+            <li><i class="fa-li fa fa-check"></i>
+            <p>Hire new staff in each new country</p>
+            </li>
+            <li><i class="fa-li fa fa-check"></i>
+            <p>Invest and develop further blockchain based intellectual property, in terms of new products and services</p>
+            </li>
+            <li><i class="fa-li fa fa-check"></i>
+            <p>Invest in baking partnerships, or buy banking licenses in various new countries, wherever allowed</p>
+            </li>
+            <li><i class="fa-li fa fa-check"></i>
+            <p>Day-to-day operating expenses</p>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<!------------ Tokensale end ------------>
+
+<!------------ Media start 
+<section id="media" class="pattern-bg">
+  <div class="container">
+    <div class="title-bullet"><div class="bullet"></div></div>
+    <h1>Media</h1>
+    <div style="clear:both;"></div>
+    <div class="row">
+      <div class="flex-container wow fadeInUp">
+        <div class="media-slider">
+          <ul class="slides" style="text-align:center;">
+            <li>
+              <div class="col-md-4 col-sm-4 v-pad">
+                <a href="https://www.youtube.com/watch?v=VB2oOM2MlcQ" class="video-pop-up"><div style="background:#333d47; width:100%; height:240px;"></div></a>
+                <br><br>
+                <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+              </div>
+              <div class="col-md-4 col-sm-4 v-pad">
+                <a href="https://www.youtube.com/watch?v=QXNmaJxk0Nc" class="video-pop-up"><div style="background:#333d47; width:100%; height:240px;"></div></a>
+                <br><br>
+                <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+              </div>
+              <div class="col-md-4 col-sm-4 v-pad">
+                <a href="https://www.youtube.com/watch?v=0KNCErbpYvc" class="video-pop-up"><div style="background:#333d47; width:100%; height:240px;"></div></a>
+                <br><br>
+                <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-4 col-sm-4 v-pad">
+                <a href="https://www.youtube.com/watch?v=0KNCErbpYvc" class="video-pop-up"><div style="background:#333d47; width:100%; height:240px;"></div></a>
+                <br><br>
+                <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+              </div>
+              <div class="col-md-4 col-sm-4 v-pad">
+                <a href="https://www.youtube.com/watch?v=j47MC3V9qMM" class="video-pop-up"><div style="background:#333d47; width:100%; height:240px;"></div></a>
+                <br><br>
+                <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+              </div>
+              <div class="col-md-4 col-sm-4 v-pad">
+                <a href="https://www.youtube.com/watch?v=SxTATUzroa0" class="video-pop-up"><div style="background:#333d47; width:100%; height:240px;"></div></a>
+                <br><br>
+                <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="background:#dededf; width:100%; height:1px; margin:90px 0 60px 0;"></div>
+    <h2 style="font-weight:700; color:#00abc7;">Articles</h2>
+    <br>
+    <br>
+    <div class="row">
+      <div class="flex-container wow fadeInUp">
+        <div class="articles-slider">
+          <ul class="slides" style="text-align:center;">
+            <li>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                  <div style="width:100%; background:#fff; height:160px; box-sizing:border-box; padding-top:50px;"><h1>LOGO</h1></div>
+                  <br><br>
+                  <p style="color:#999999;">MEDIA NAME</p>
+                  <br>
+                  <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+                  <br>
+                  <a href="" target="_blank" style="color:#00abc7;">Read More</a>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                  <div style="width:100%; background:#fff; height:160px; box-sizing:border-box; padding-top:50px;"><h1>LOGO</h1></div>
+                  <br><br>
+                  <p style="color:#999999;">MEDIA NAME</p>
+                  <br>
+                  <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+                  <br>
+                  <a href="" target="_blank" style="color:#00abc7;">Read More</a>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                  <div style="width:100%; background:#fff; height:160px; box-sizing:border-box; padding-top:50px;"><h1>LOGO</h1></div>
+                  <br><br>
+                  <p style="color:#999999;">MEDIA NAME</p>
+                  <br>
+                  <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+                  <br>
+                  <a href="" target="_blank" style="color:#00abc7;">Read More</a>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                  <div style="width:100%; background:#fff; height:160px; box-sizing:border-box; padding-top:50px;"><h1>LOGO</h1></div>
+                  <br><br>
+                  <p style="color:#999999;">MEDIA NAME</p>
+                  <br>
+                  <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+                  <br>
+                  <a href="" target="_blank" style="color:#00abc7;">Read More</a>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                  <div style="width:100%; background:#fff; height:160px; box-sizing:border-box; padding-top:50px;"><h1>LOGO</h1></div>
+                  <br><br>
+                  <p style="color:#999999;">MEDIA NAME</p>
+                  <br>
+                  <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+                  <br>
+                  <a href="" target="_blank" style="color:#00abc7;">Read More</a>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                  <div style="width:100%; background:#fff; height:160px; box-sizing:border-box; padding-top:50px;"><h1>LOGO</h1></div>
+                  <br><br>
+                  <p style="color:#999999;">MEDIA NAME</p>
+                  <br>
+                  <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+                  <br>
+                  <a href="" target="_blank" style="color:#00abc7;">Read More</a>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                  <div style="width:100%; background:#fff; height:160px; box-sizing:border-box; padding-top:50px;"><h1>LOGO</h1></div>
+                  <br><br>
+                  <p style="color:#999999;">MEDIA NAME</p>
+                  <br>
+                  <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+                  <br>
+                  <a href="" target="_blank" style="color:#00abc7;">Read More</a>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                  <div style="width:100%; background:#fff; height:160px; box-sizing:border-box; padding-top:50px;"><h1>LOGO</h1></div>
+                  <br><br>
+                  <p style="color:#999999;">MEDIA NAME</p>
+                  <br>
+                  <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+                  <br>
+                  <a href="" target="_blank" style="color:#00abc7;">Read More</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ Media end ------------>
+	
+<!------------ Roadmap start ------------>
+<section id="roadmap" class="line-bg">
+  <div class="container">
+    <div style="width:210px; margin:0 auto;">
+      <div class="title-bullet"><div class="bullet"></div></div>
+      <h1>Roadmap</h1>
+      <div style="clear:both;"></div> 
+    </div>
+    <br><br>
+    <div class="tab">
+      <ul class="roadmap-tab">
+        <li><div class="tablinks" onclick="openCity(event, 'roadmap-btn')" id="defaultOpen">Roadmap</div></li>
+        <li><div class="tablinks" onclick="openCity(event, 'growth-btn')">Growth Strategy</div></li>
+      </ul>
+    </div>
+    <br><br><br>
+    <div id="roadmap-btn" class="tabcontent">
+      <div class="example-centered">
+      <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
+        <ul class="timeline timeline-centered">
+          <li class="timeline-item">
+            <div class="timeline-info"> </div>
+            <div class="timeline-marker timeline-active"></div>
+            <div class="timeline-content wow fadeInRight">
+              <h3 class="timeline-title">Q4 2018</h3>
+              <p>Private Sale, Air-drop and Bounties, Pre-sale, Public Sale</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-info"> </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content wow fadeInLeft">
+              <h3 class="timeline-title">Q1 2019</h3>
+              <p>End of Token Generation Event, Exchange Listing</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-info"> </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content wow fadeInRight">
+              <h3 class="timeline-title">Q2 2019</h3>
+              <p>Development of NEXXO Wallet and Mobile application, NEXXO Token Enabler Program Integration, Development of NEXXONet, NEXXONet Penetration Testing / Hack bounty, Private Beta for NEXXONet</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-info"> </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content wow fadeInLeft">
+              <h3 class="timeline-title">Q4 2019</h3>
+              <p>NEXXONet Official Launch, NEXXO Local/Private Blockchain Development</p>
+            </div>
+          </li>  
+          <li class="timeline-item">
+            <div class="timeline-info"> </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content wow fadeInRight">
+              <h3 class="timeline-title">Q1 2020</h3>
+				<p>NEXXO Local/Private Blockchain Penetration Testing / Hack bounty, NEXXO Local/Private Blockchain cross-chain testing with NEXXONet, NEXXO Blockchain Performance Testing (Load/Stress), NEXXO Local/Private Blockchain Official Launch</p>
+              <p></p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-info"> </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content wow fadeInLeft">
+              <h3 class="timeline-title">Q2 2020</h3>
+				<p>Integrate NEXXO Local/Private Blockchain to new markets (Growth Strategy)</p>
+              <p></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+      
+    <div id="growth-btn" class="tabcontent">
+	  <div class="row">
+		<div class="col-md-6 col-sm-6 v-pad">
+		  <h4>Our growth opportunity: Leverage blockchain technology to lower risk, collect data, service under-banked small businesses, then expand globally.</h4>
+		  <br>
+		  <p>Unlike large commercial banks, we leverage blockchain technology to welcome all types of small and micro businesses to use our various lower risk solutions. Once we start servicing our clients, we start collecting and generating immutable data, which we power with our blockchain business and data platforms. Armed with data, analytics, and knowledge, we then start offering suitable higher risk banking and financial services to our customers. Such services vary from offering loans, insurance, Point of Sale (POS), mobile POS, salary cards, expense cards or e-commerce platforms. This approach enables us to lower our exposure while offering high-risk products and services. Meanwhile, traditional financial institutions just cannot compete in such a high risk, low-margin environment.</p>
+		</div>
+		<div class="col-md-6 col-sm-6 v-pad">
+		  <h4>Our Growth Strategy: Think globally, think multiple continents, think 209 Million small and micro-businesses in 50 countries.</h4>
+		  <br>
+	      <p>Based on the World Bank research, presented in earlier sections, we’ve discovered that the top 50 most populous countries contained approximately 209 million micro and small businesses. As a result, our growth strategy shall be based on a multi-continent expansion plan, where we shall expand the NEXXO network across the following continents:</p>
+		  <br>
+		  <p><b><span style="color:#00abc7;">1.</span> Africa</b></p>
+		  <p><b><span style="color:#00abc7;">2.</span> Asia</b></p>
+		  <p><b><span style="color:#00abc7;">3.</span> North America</b></p>
+	      <p><b><span style="color:#00abc7;">4.</span> South America</b></p>
+		  <p><b><span style="color:#00abc7;">5.</span> South East Asia & the Middle East</b></p>
+		</div>
+	  </div>
+	  <br><br>
+      <ul class="roadmap-tab">
+        <li><div class="tablinks-growth" onclick="growthtab(event, 'twentynineteen')" id="growthOpen">2019</div></li>
+        <li><div class="tablinks-growth" onclick="growthtab(event, 'twentytwenty')">2020</div></li>
+		<li><div class="tablinks-growth" onclick="growthtab(event, 'twentytwentyone')">2021</div></li>
+      </ul>
+	  <br><br>
+	  <div id="twentynineteen" class="tabcontent-2">
+		  <img src="/assets/staticassets/img/map-growth-2019.png" alt="">
+	  </div>
+	  <div id="twentytwenty" class="tabcontent-2">
+		  <img src="/assets/staticassets/img/map-growth-2020.png" alt="">
+	  </div>
+      <div id="twentytwentyone" class="tabcontent-2">
+		  <img src="/assets/staticassets/img/map-growth-2021.png" alt="">
+	  </div>
+    </div>
+  </div>
+</section>
+<!------------ Roadmap end ------------>
+
+<!------------ Team start ------------>
+<section id="team" class="pattern-blue">
+  <div class="container">
+    <div class="title-bullet" style="border:2px solid #fff;"><div class="bullet" style="background:#fff;"></div></div>
+    <h1>Team</h1>
+    <div style="clear:both;"></div>
+    <br><br>
+    <div class="row wow fadeInUp" style="text-align:center;">
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+        <a href="#nebil" class="open-popup-link">
+        <div class="team-circle">
+          <div class="team-img"><img src="/assets/staticassets/img/team-nebil.jpg" alt=""></div>                
+        </div>
+        </a>
+        <br><br>
+        <h3>Nebil Ben Aissa</h3>
+        <h4>Founder & CEO</h4>
+        <br>
+        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+        <a href="#gunnar" class="open-popup-link">
+        <div class="team-circle">
+          <div class="team-img">
+          <img src="/assets/staticassets/img/team-gunnar.jpg" alt=""></div>
+        </div>
+        </a>
+        <br><br>
+        <h3>Gunnar Skoog</h3>
+        <h4>Group Chief Operating Officer</h4>
+        <br>
+        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+        <a href="#muzzammil" class="open-popup-link">
+        <div class="team-circle">
+          <div class="team-img">
+          <img src="/assets/staticassets/img/team-muzzammil.jpg" alt=""></div>
+        </div>
+        </a>
+        <br><br>
+        <h3>Muzzammil Saeed</h3>
+        <h4>Head of Customer Success</h4>
+        <br>
+        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+        <a href="#aizaz" class="open-popup-link">
+        <div class="team-circle">
+          <div class="team-img">
+          <img src="/assets/staticassets/img/team-aizaz.jpg" alt=""></div>
+        </div>
+        </a>
+        <br><br>
+        <h3>Aizaz Tahsildar</h3>
+        <h4>Head of Innovation</h4>
+        <br>
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      </div>
+    </div>
+	<div class="row wow fadeInUp" style="text-align:center;">
+	  <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+	    <a href="#naraynan" class="open-popup-link">
+        <div class="team-circle">
+          <div class="team-img">
+          <img src="/assets/staticassets/img/team-naraynan.jpg" alt=""></div>
+        </div>
+        </a>
+        <br><br>
+        <h3>Naraynan Kannan</h3>
+        <h4>Head of Disruptive Technologies, Blockchain Apps</h4>
+        <br>
+        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+	  </div>
+	  <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+	    <a href="#abhinav" class="open-popup-link">
+        <div class="team-circle">
+          <div class="team-img">
+          <img src="/assets/staticassets/img/team-abhinav.jpg" alt=""></div>
+        </div>
+        </a>
+        <br><br>
+        <h3>Abhinav Kumar</h3>
+        <h4>Manager, Bank Cards & E-Wallet Technologies</h4>
+        <br>
+        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+	  </div>
+	  <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+	    <a href="#mohammed" class="open-popup-link">
+        <div class="team-circle">
+          <div class="team-img">
+          <img src="/assets/staticassets/img/team-mohammed.jpg" alt=""></div>
+        </div>
+        </a>
+        <br><br>
+        <h3>Mohammed Mahmoud</h3>
+        <h4>Head of Business Development</h4>
+        <br>
+        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+	  </div>
+	  <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+	    <a href="#jason" class="open-popup-link">
+        <div class="team-circle">
+          <div class="team-img">
+          <img src="/assets/staticassets/img/team-jason.jpg" alt=""></div>
+        </div>
+        </a>
+        <br><br>
+        <h3>Jason Paul Jones</h3>
+        <h4>Head of Partnerships & Franchise Expansion</h4>
+        <br>
+        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+	  </div>
+	</div>
+	<div class="row wow fadeInUp" style="text-align:center;">
+	  <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+	    <a href="#abdul" class="open-popup-link">
+        <div class="team-circle">
+          <div class="team-img">
+          <img src="/assets/staticassets/img/team-abdul.jpg" alt=""></div>
+        </div>
+        </a>
+        <br><br>
+        <h3>Abdul-Rahman Al-Ameri</h3>
+        <h4>Manager, International Expansion – Middle East.</h4>
+        <br>
+        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+	  </div>
+	  <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+	    <a href="#qasim" class="open-popup-link">
+        <div class="team-circle">
+          <div class="team-img">
+          <img src="/assets/staticassets/img/team-qasim.jpg" alt=""></div>
+        </div>
+        </a>
+        <br><br>
+        <h3>Qasim Abbas</h3>
+        <h4>Group Finance Manager</h4>
+        <br>
+        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+	  </div>
+	  <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+	    <a href="#ameen" class="open-popup-link">
+        <div class="team-circle">
+          <div class="team-img">
+          <img src="/assets/staticassets/img/team-ameen.jpg" alt=""></div>
+        </div>
+        </a>
+        <br><br>
+        <h3>Ameen Mohammad</h3>
+        <h4>Head of Cash Management & Banking Settlements</h4>
+        <br>
+        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+	  </div>
+	  <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+	    <a href="#amit" class="open-popup-link">
+        <div class="team-circle">
+          <div class="team-img">
+          <img src="/assets/staticassets/img/team-amit.jpg" alt=""></div>
+        </div>
+        </a>
+        <br><br>
+        <h3>Amit Joshi</h3>
+        <h4>Head of Employee Experience (HR)</h4>
+        <br>
+        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+	  </div>
+	</div>
+   <!-- <div class="row wow fadeInUp" style="text-align:center;">
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+	    <a href="#praveen" class="open-popup-link">
+        <div class="team-circle">
+          <div class="team-img">
+          <img src="/assets/staticassets/img/team-praveen.jpg" alt=""></div>
+        </div>
+        </a>
+        <br><br>
+        <h3>Praveen</h3>
+        <h4>Vice President of Engineering, Blockchain Platform</h4>
+        <br>
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+	  </div>
+    </div>-->
+  </div>
+</section>
+<!------------ Team end ------------>
+
+<!------------ Contact start ------------>
+<section id="contact" class="pattern-dark">
+  <div class="container">
+    <div class="title-bullet" style="border:2px solid #fff;"><div class="bullet" style="background:#fff;"></div></div>
+    <h1 style="color:#00abc7;">Contact</h1>
+    <div style="clear:both;"></div>
+    <div class="row">
+      <div class="col-md-6 col-sm-6 v-pad" style="text-align:center;">
+        <img class="wow fadeInLeft" src="/assets/staticassets/img/logo-footer.png" alt="">
+      </div>
+      <div class="col-md-6 col-sm-6 v-pad">
+        <h3 style="color:#fff;">FOR ENQUIRIES, EMAIL US AT:</h3><br>
+        <h2 style="font-weight:700;"><a href="mailto:contact@nexxo.io" style="color:#00abc7; text-decoration:underline;">contact@nexxo.io</a></h2>
+        <br><br><br>
+        <ul class="social">
+          <li><a href="http://t.me/nexxoint" target="_blank"><div class="social-icon"><i class="fa fa-telegram" aria-hidden="true"></i></div></a></li>
+          <li><a href="https://twitter.com/NexxoInt" target="_blank"><div class="social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
+          <li><a href="https://www.facebook.com/nexxoint/" target="_blank"><div class="social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
+           <li><a href="https://www.linkedin.com/company/nexxoint/" target="_blank"><div class="social-icon"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a></li>
+          <li><a href="https://www.youtube.com/channel/UCd44NmVcZV
+B2InBVWgkx1hQ?view_as=subscriber" target="_blank"><div class="social-icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></div></a></li>
+          <li><a href="mailto:contact@nexxo.com"><div class="social-icon"><i class="fa fa-envelope" aria-hidden="true"></i></div></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ Contact end ------------>
+<div class="footer-top"></div>
+<div class="footer">
+  <div class="container">
+    <h3 style="text-align:center;">DON'T MISS THE LATEST NEWS AND UPDATES</h3>
+    <br><br>
+    <div class="subscribe-container">
+      <input type="text" class="input-style" placeholder="enter your email address " required="">
+      <button type="submit" value="Submit" class="btn subscribe-btn">Submit</button>
+    </div>
+  </div>
+</div>
+<div style="width:100%; height:1px; background:#c9c9c9;"></div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="copyright"><p>© 2018 NEXXO. All Rights Reserved.</p></div>
+      <div class="terms">
+        <p><a href="#terms" class="open-popup-link">Terms of Service</a> &nbsp;&nbsp;I &nbsp;&nbsp;<a href="#privacy" class="open-popup-link">Privacy Policy</a></p>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+	
+<!------------ Solution popup end ------------>
+<div id="iban" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>The NEXXO IBAN (International Bank Account Number)</h3>
+    <h4>Bank card solution for KYC’d small business owners & operators & their employees.</h4>
+  </div>
+  <br>
+  <p>The NEXXO IBAN bank card solution is a prepaid bank card, that is offered to small business owners and operators and also their employees. The bank card solution is developed in partnership with a local bank, with permission from the local central bank, and complies with local central bank laws, rules and regulations pertaining to KYC (Know Your Customer), AML (Anti-Money Laundering) as well as international OFAC (US Treasury Office of Foreign Assets Control) black-list. Each card is also linked to a real and unique International Bank Account Number (IBAN); thus, it can be funded from another bank account.</p>
+  <br>
+  <p>This bank card solution enables small business owners and operators to get a bank account, to deposit and withdraw money from any bank ATM, or pay for purchases at any merchant POS (Point Of Sale) locally or internationally. The solution is compatible with all local and international banking systems. This is a very powerful banking solution that addresses a highly under-serviced and under-banked market.</p>
+  <br>
+  <p>Our bank-card platform is blockchain powered by IBM Hyperledger and all transactions are secure, as well as compliant with the highest security standards such as PCI DSS 3.22 (Payment Card Industry Data Security Services 3.22).</p>
+</div>
+	
+	<div id="mobile-wallet" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>The NEXXO Mobile-Wallet</h3>
+    <h4>Linked to One-Time-Use prepaid card, with international remittance and NEXXO Token-to-Fiat conversion features.</h4>
+  </div>
+  <br>
+  <p>The NEXXO Mobile Wallet solution can work as either an independent mobile wallet product or can be linked to the NEXXO IBAN bank card. The NEXXO Mobile-Wallet solution enables KYC’d users to get an instantaneous One-Time-Use generated card number to make online-e-commerce purchases or pay at any merchant POS supporting contactless or QR payments. The solution is also linked to all international remittance networks, so that users can send money to friends, family members or business suppliers anywhere in the world.</p>
+  <br>
+  <p>Originally, the solution was targeted primarily towards small business owners and operators that were under-banked and under-serviced: who had to pay exorbitant fees to commercial bankers, when traveling or when sending money abroad.</p>
+  <br>
+  <p>Post the NEXXO Token sale, we shall add the feature of enabling KYC’d customers who hold the NEXXO Mobile Wallet to also be able to convert their NEXXO Tokens to local Fiat currency, then use their mobile wallet as means to pay for purchases online, at any merchant POS device supporting contactless or QR payments.</p>
+</div>
+	
+	<div id="cash-management-solution" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Cash Management Solution</h3>
+    <h4>The NEXXO Small Business Bank Account Cash Management Solution.</h4>
+  </div>
+  <br>
+  <p>The NEXXO award winning Mobile Cash management solution enables small business owners and operators to upload funds via cash, check, card, bank wire (soon NEXXO Token) onto their NEXXO account; then easily make payments to entities such as employees, suppliers, utilities, or government.</p>
+  <br>
+  <p>The platform enables small business owners and operators to manage all incoming and outgoing transactions via secure access from their mobile or any web interface. It also offers account transaction data analysis and visualization, so they can better manage their business. The system also enables users to track cash or check transactions and visualize cash vs. electronic usage, patterns and projections.</p>
+  <br>
+  <p>The NEXXO cash management solution is natively integrated with all NEXXO solutions such as the NEXXO IBAN bank-card, the NEXXO Payroll Solution, the NEXXO e-commerce, and the Billing or Point Of Sale (POS) solutions. Such seamless integration enables the small business owner and operator to monitor incoming and outgoing funds, and make quick decisions impacting the financial health of their business.</p>
+<br>
+  <p>The solution stores all transactions, check deposit slips, and related receipts onto the NEXXO blockchain, powered by IBM Hyperledger, where such transactions are later retrieved as immutable (cannot be altered) proof of fund receipt or transfer.</p>
+</div>
+	
+	<div id="payroll-solution" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Mobile-Pay Payroll Solution</h3>
+    <h4>The NEXXO Mobile-Pay Payroll Solution for small and micro businesses.</h4>
+  </div>
+  <br>
+  <p>The NEXXO Payroll solution is targeted primarily towards micro and small businesses and enables them to pay employees directly via a bank card, instead of manually tracking, managing, and paying employees in cash or via paper checks.</p>
+  <br>
+  <p>The solution also includes a Human Resources (HR) module to hire and track employee salary, and labor documentation securely and confidentially. It also offers employees access to their salary, and various other HR related information and activities. The system includes a time tracking platform to track employee hours, over-time, deductions, bonuses, and exception pay.</p>
+  <br>
+  <p>The platform is blockchain powered and is built for 100% mobile access by either employers or employees. It is designed to help a very busy small business owner and operator, to process payroll via a mobile phone in minutes, instead of hours. The NEXXO Mobile Payroll business app is easy and fast to use; it improves employee retention, lowers salary processing costs and overheads, and is seamlessly linked to the NEXXO Bank-Card platform.</p>
+</div>
+	
+	<div id="financing-solution" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>The NEXXO Micro-Financing solution</h3>
+  </div>
+  <br>
+  <p>After a period of time servicing customers and collecting enough information about their revenue and spending trends; NEXXO then partners with a locally regulated lending entity and offers micro-financing or micro-lending facilities to qualified customers.</p>
+  <br>
+  <p>Using IBM Hyperledger blockchain technology, NEXXO issues loans through smart contracts, which are executed and then registered onto the NEXXO blockchain. This removes the need for an intermediary or human intervention to enforce the terms of a loan. Smart contracts are transparent, cheaper to execute and more reliable than traditional contracts, which can be slow to execute and complicated.</p>
+  <br>
+  <p>To further simplify the process, the micro-loan is automatically disbursed onto the NEXXO IBAN bank card account (and relating e-Wallet), and all loan repayments are automatically withdrawn from the same card account. This simplifies further the micro-loan process and cuts down a tremendous amount of overheads and paper work thus enabling NEXXO to pass-on the savings to the small business owner. It is important to recognize the value of the NEXXO services; where it takes on a small business owner that is being told “No, way” by all commercial bankers; then be able to offer them competitive rates that are at par with rates received by large and stable enterprises.</p>
+<br>
+  <p>Using Blockchain smart contracts, and its IBAN bank-card technology, NEXXO limits the financing rates linked to loan installments. This reduces risk to both NEXXO and its customers. It also automates loan processing, reduces hassle, lowers costs and makes the lending process a lot faster and more efficient.</p>
+</div>
+	
+	<div id="pos-solution" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>The NEXXO Smart-Android PCI Certified Point Of Sale (POS) solution</h3>
+  </div>
+  <br>
+  <p>The NEXXO Point Of Sale (POS) solution is one of the first POS solutions that is both Android enabled as well as PCI (Payment Card Industry) and DSS (Data Security Standard) certified. This is because the Android operating system platform is based on open source, and POS debit or credit card transactions are highly secured and encrypted by the international providers, such as VISA, MasterCard, American Express...etc. This means that the international providers will not willingly certify such devices, unless years of security scrutiny and security penetration have been applied, before allowing such devices to communicate with banks and payment networks. The NEXXO Smart-Android POS device is certified to accept:</p>
+  <br>
+  <ul class="fa-ul">
+    <li><i class="fa-li fa fa-check"></i>
+        <p style="font-weight:400;">All VISA card transactions: debit or credit card, contactless or QR codes.</p>
+    </li>
+    <li><i class="fa-li fa fa-check"></i>
+        <p style="font-weight:400;">All MasterCard card transactions: debit or credit card, contactless or QR codes.</p>
+    </li>
+    <li><i class="fa-li fa fa-check"></i>
+        <p style="font-weight:400;">All American Express card transactions: debit or credit card, contactless or QR codes.</p>
+    </li>
+    <li><i class="fa-li fa fa-check"></i>
+        <p style="font-weight:400;">(coming soon) AliPay, Wechat, PayTM... and other new alternative payment methods.</p>
+    </li>
+  </ul>
+  <br>
+  <p>The NEXXO Smart-Android POS device enables small businesses to process debit or credit card transactions. It also features various payment applications that are customized to the specific needs and requirements of small businesses. The device comes pre-installed with various apps such as: retail, hospitality, F&B outlets...etc. The device is also integrated with the NEXXO small business e-commerce solution and the NEXXO Cash Management system.</p>
+		<br>
+  <p>NEXXO uses IBM Hyperledger blockchain to register all device settings and transactions communicated from the device to the NEXXO decentralized back-office platform. This approach restricts the use of the POS device to NEXXO only; and prevents hackers from injecting malicious codes or spoof device communications, as they would need to reverse engineer and cheat the IBM Hyperledger blockchain technology, which is impossible to achieve in this lifetime.</p>
+		<br>
+  <p>Using blockchain smart contract technology, NEXXO can offer many creative POS enabled applications and services targeting its small business ecosystem. This enables us to automate many activities and processes involved in accepting payments by a small business merchant.</p>
+</div>
+	
+	<div id="ecommerce-solution" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>The NEXXO small business e-commerce Solution</h3>
+  </div>
+  <br>
+  <p>NEXXO enables small businesses to grow their business by offering alternative selling channels, such as secure e-commerce shopping, to their customers. A small business can easily offer e-commerce, either by quickly building an e-commerce store, or by integrating their customized web site with the NEXXO secure payment gateway system; either way, the process is easy, simple, streamlined and yet extremely powerful.</p>
+  <br>
+  <p>The NEXXO e-commerce solution is feature rich and gives small businesses a lot of room for growth. It offers advanced features such as tokenization for recurring payments (for memberships or monthly recurring service fees) and mobile SDKs (Software Development Kits) that integrate payments with a mobile App. The NEXXO e-commerce solution integrates seamlessly with the customer’s NEXXO Cash Management, POS, or e-invoicing solutions. All applications are under one single merchant interface.</p>
+  <br>
+  <p>NEXXO uses blockchain immutable smart contract technology to lock-in all e-commerce transactions and track transaction order workflow, such as billing, shipping, and delivery.</p>
+		<br>
+  <p>The solution is secure, robust, simple, easy, and yet very powerful. It is multi-lingual, and it enables small business owners and operators to offer e-commerce quickly and seamlessly, grow their business and enhance their customer’s experience.</p>
+</div>
+	
+	<div id="e-invoicing" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>The NEXXO Small Business e-Invoicing Solution</h3>
+  </div>
+  <br>
+  <p>NEXXO uses blockchain smart contract technology to build undisputable invoice contracts between the NEXXO small business owner cum operator and their customers or suppliers. The solution is simple, easy, and yet very powerful; it enables a small business owner to issue an invoice quickly and seamlessly and to track payments.</p>
+  <br>
+  <p>The NEXXO e-billing solution is specifically designed for growing service-oriented businesses that do not have a physical location or physical product to sell via a POS device. The solution is secure and accessible via mobile, or any web interface and easily integrates with ‘off the shelf’ accounting, billing, and invoicing systems. The NEXXO e-invoicing solution is feature rich and gives businesses a lot of room for growth, such as easy integration with NEXXO’s secure payment gateway, or other payment gateways, recurring billing, and mobile SDKs, enabling businesses to integrate their e-invoicing system directly onto a mobile App. Most importantly, NEXXO e-invoicing integrates with NEXXO POS and e-commerce solutions, and all transactions are easily accessible from the NEXXO cash management interface accessible via mobile or any web interface.</p>
+</div>
+	
+	<div id="secure-api" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>The NEXXO secure API integration Platform</h3>
+  </div>
+  <br>
+  <p>NEXXO offers Application Programming Interface (API) secured integration into all its services (with permissioned access), to enable its business partners, 3rd party providers and small business customers to leverage the power of the NEXXO solutions, while maintaining their own brands and front-facing interfaces. Such integration is offered via secured Web Service interface, therefore, NEXXO uses IBM Hyperledger blockchain technology to offer permissioned access to its private blockchain platform.</p>
+</div>
+	
+	<div id="fully-complies" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>NEXXO fully complies with KYC, AML and OFAC</h3>
+  </div>
+  <br>
+  <p>Please note that all products discussed above are only offered when a business owner, or consumer, presents full KYC documentation in compliance with local regulatory laws and regulations imposed by the local central bank, government, ministries, or law enforcement entities. Also note that NEXXO fully complies with all local government AML (Anti-Money Laundering), ATF (Anti-Terrorist Funding) and OFAC (US Treasury Office of Foreign Assets Control) rules and regulations and shall not engage in offering any service, unless all compliant documentation and checks are fulfilled.</p>
+  <br>
+  <p>NEXXO uses blockchain technology to collect and store KYC information, thus providing a clear, undisputable audit trail that is compliant to local regulations. Customers do not need to repeatedly upload KYC information when subscribing for new NEXXO services.</p>
+</div>
+<!------------ Solution popup end ------------>
+
+<!------------ Team popup start ------------>
+<div id="nebil" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Nebil Ben Aissa</h3>
+    <h4>Founder & CEO</h4>
+  </div>
+  <br>
+  <p>Nebil Ben Aissa is a 20+ year technology veteran. He is experienced in starting and growing companies in electronic payments, electronic banking, mobile payments, e-commerce, cloud computing, blockchain, ICOs and virtual currency. He has successfully started, built and grown tech companies; raised funds, acquired and sold various businesses in USA and Emerging Markets. He has operated and managed multiple organizations and teams across continents and sustained aggressive shareholder growth. </p>
+  <br>
+  <p>He is the founding partner of Nexxo Network a blockchain social commerce platform; as well as Nexxus Ventures LLC, a boutique International Venture Capital firm that invests in electronic payments, mobile payments and blockchain powered platforms.</p>
+  <br>
+  <p>In 2001 Mr. Ben Aissa founded American EPAY (now EPAY Systems), one of the fastest US companies specializing in e-payments for low wage laborers, which he successfully exited in 2010. Prior to that, he founded and exited 1internet Corp., an e-banking software company; and founded and exited AB-Internet Corp. a Milwaukee ISP, which he sold to ExecPC (later acquired by Voyager.net, now Local.net)</p>
+  <br>
+  <p>Mr. Ben Aissa holds an MBA from the J.L. Kellogg School of Business (Northwestern University), a dual Master’s degree in Electrical and Computer Engineering from the University of Wisconsin at Madison, and a dual Bachelor’s degree in Electrical and Computer Engineering from the University of Wisconsin at Madison.</p>
+  <br>
+  <p>He owns 11 United States Registered Patents and speaks 6 languages. He is an active member of the technology and entrepreneurship scene in Qatar, Dubai, Chicago and is a member of the Young President's Organization (YPO). In his younger days, he was a competitive swimmer and he held national and international swimming records. He enjoys reading business books, swimming, and playing water polo.</p>
+</div>
+
+<div id="gunnar" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Gunnar Skoog </h3>
+    <h4>Group Chief Operating Officer </h4>
+  </div>
+  <br>
+  <p>Gunnar Skoog is an international business leader with a record of accomplishments, acquired over more than 25 years, of building entrepreneurial companies across global locations within diverse cultures. He has a proven ability of taking ideas from inception to completion and driving complex initiatives to success with bottom line responsibility. </p>
+  <br>
+  <p>Gunnar has throughout his career been building various businesses and has thereby created substantial shareholder value. He has hands-on experience of innovation process implementation; leadership program development; performance and corporate culture management; and transforming people and teams to deliver their best work ever.</p>
+  <br>
+  <p>Gunnar has experience in the following industries: Online/Digital Media, Financial Services, Industrial Projects, Recycling technologies, Commercial Equipment and FMCG and he holds a Bachelor’s degree in business administration from Stockholm University. </p>
+</div>
+
+<div id="muzzammil" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Muzzammil Saeed</h3>
+    <h4>Head of Customer Succes</h4>
+  </div>
+  <br>
+  <p>Muzzammil Saeed is a career banker with over 20 years’ experience in different multinational and regional banks, both conventional and Islamic. </p>
+  <br>
+  <p>He has successfully led sales and services teams and has experience in both retail and corporate banking. Muzzammil has fostered key relationships within the banking and financial industry segments across the Middle East. He has been instrumental in building various departments within the banking units and leading teams in successfully achieving exceptional results. </p>
+  <br>
+  <p>He has held positions as Sales Manager and Head of Secured Lending at Standard Chartered Bank, Strategy and Operational Management Head at HSBC Bank, Middle East, Head of Sales at Barwa Bank and Head of Emerging Corporates at Mashreq Bank. Muzzammil is a certified Islamic banker and Takaful expert and he has a Master’s degree in Islamic Banking and Finance from AIMS in the UK. </p>
+</div>
+
+<div id="aizaz" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Aizaz Tahsildar </h3>
+    <h4>Head of Innovation</h4>
+  </div>
+  <br>
+  <p>Aizaz Tahsildar is a seasoned international payment expert and business leader with over 22 years’ experience of building local and international business partnerships with various payment schemes, blockchain platforms and payment service providers.</p>
+  <br>
+  <p>He has a proven track record of successfully managing business programs and spearheading innovative digital channel projects for ATM, retail, ecommerce and mobile banking. </p>
+  <br>
+  <p>Aizaz has expertise in developing new business opportunities and creating profitable ‘go to market’ strategies by identifying, prioritizing and building structures and processes in the field of payment solutions and financial technologies.</p>
+  <br>
+  <p>Previously he worked as Enterprise Program Manager and digital transformation expert for the Commercial Bank of Qatar, and he has a Masters degree in Applied Science, and an MBA in Business Strategy from Oxford University, UK.</p>
+</div>
+
+<div id="naraynan" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Naraynan Kannan</h3>
+    <h4>Head of Disruptive Technologies, Blockchain Apps</h4>
+  </div>
+  <br>
+  <p>Naren Kannan is a technology leader with over 15 years of technical experience. He has headed various projects across multiple domains and possesses excellent leadership and communication skills. Naren is highly skilled in cloud computing, SAAS, blockchain technology and networking. He knows 7 programming languages and has worked with Hewlett Packard and Infosys.</p>
+  <br>
+  <p>Naren holds a Bachelor’s degree in Electrical & Electronics Engineering and is a Microsoft Certified Solution Architect and certified PCI implementer.</p>
+</div>
+	
+<div id="praveen" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Praveen</h3>
+    <h4>Vice President of Engineering, Blockchain Platform</h4>
+  </div>
+  <br>
+  <p>Praveen is a Business Value Driven Technology professional, with considerable experience in the areas of Digital Transformation Strategy & Implementation through software applications working with both startups and established companies and providing solutions to elevate businesses.</p>
+  <br>
+  <p>He is from IIM-Calcutta and has more than 17 years of delivering software applications and working with Agile teams across the globe. Building teams with various skills and domain experiences, mentoring them, and keeping them motivated to deliver value to customers has been his vital role.</p>
+  <br>
+  <p>Having setup Digital R&D/Innovation labs with defined objectives and ROI for companies and experienced in delivering innovative technology solutions like RPA, AI, IOT, Blockchain & Analytics to solve key business pain areas for customers, he has also worked with and managed teams in various areas like Bespoke development, Digital Transformation, Business Intelligence, ERP implementations and Managed Services.</p>
+  <br>
+  <p>He is a PMP/ITIL/Design Thinking certified professional, reflecting leadership qualifications in Technology and Delivery Management.</p>
+  <br>
+  <p>He has strong client relationship management skills, along with abilities in managing distributed Agile projects and has worked and managed
+clients across multiple geographies such as the Middle-East, UK/Europe, USA and the Asia Pacific Region.</p>
+  <br>
+  <p>He has been responsible for the growth and profitability component of the competency/practice and delivery engagements.</p>
+</div>
+	
+<div id="abhinav" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Abhinav Kumar</h3>
+    <h4>Manager, Bank Cards & E-Wallet Technologies</h4>
+  </div>
+  <br>
+  <p>Abhinav Kumar is a technical leader with over 8 years of technical development experience. He leads various projects and ensures that the company’s technology strategy serves its business strategy.</p>
+  <br>
+  <p>Abhinav is responsible for validating technical feasibility, recommending technical platforms and solutions for various business driven requirements. His skills set range from programming, problem solving, technical writing and detail orientation and critical thinking. He is leading a team of enthusiastic colleagues that deliver quality on time.</p>
+  <br>
+  <p>Abhinav holds a Bachelor’s degree in Computer Science and is a Certified Payment Industry Security Implementor.</p>
+</div>
+
+<div id="mohammed" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Mohammed Mahmoud</h3>
+    <h4>Head of Business Development</h4>
+  </div>
+  <br>
+  <p>Muhammed Mahmoud has more than 19 years of extensive experience in innovation, product management and development, technology for online/digital/banking and information driven businesses.</p>
+  <br>
+  <p>He acquired his skills firstly with Zawya, which he built with the co-founders, and later with Thomson Reuters, who acquired the company in 2012.</p>
+  <br>
+  <p>He delivered the first SMEs Middle East/Emerging Markets strategy for Thomson Reuters, a proposition that is today worth over $270M.</p>
+  <br>
+  <p>Muhammed's ambition is driven mainly by his passion in creating value that solves customers’ problems and fulfills their needs.</p>
+  <br>
+  <p>He holds an MBA from Leicester University-UK, BSC. Computer Science from King Fahad University - KSA, Diploma in Programming Languages from the Cabinet of Information & Decision Support Center of Egypt and he is also a certified Innovation Leader and Product Manager from The Association of International Product Marketing and Management (AIPMM).</p>
+</div>
+	
+<div id="jason" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Jason Paul Jones</h3>
+    <h4>Head of Partnerships & Franchise Expansion</h4>
+  </div>
+  <br>
+  <p>Jason is a dynamic sales development entrepreneur with a proven history of working in the fast-moving consumer electronics market, delivering sales and service solutions for over 25 years in both local and international markets.</p>
+  <br>
+  <p>He owned and operated multiple franchise business models in the telecommunications and IT sector. He was a senior leader in the development and implementation of the MTN-Vodacom Africa franchise project, leading to a national rollout of over 287 independently owned franchise businesses.</p>
+  <br>
+  <p>Jason has extensive experience in large value business negotiations and is a franchising expert capable of delivering projects in international markets. He also has extensive Business Process Outsourcing knowledge and is a Global Employment Outsourcing specialist.
+He has a Master’s in Business Strategic Leadership from the University of Sussex, UK and an MBA from the University of Johannesburg, South Africa.</p>
+</div>
+	
+<div id="abdul" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Abdul-Rahman Al-Ameri</h3>
+    <h4>Manager, International Expansion – Middle East.</h4>
+  </div>
+  <br>
+  <p>Abdul Rahman Al-Ameri holds an MBA in Business Management from Birmingham University and has been a banker for the past 15 years, both in retail and corporate banking and has been with HSBC, QNB and QIIB based in London, Dubai and Doha. During his career he has worked in Sales and Relationship management as a motivational leader with a demonstrated history in building priority banking solutions. He has sound knowledge in strategic planning and deployment and has built up a broad network within the banking and financial industry across the MENA region.</p>
+  <br>
+  <p>Previously he worked as Enterprise Program Manager and digital transformation expert for the Commercial Bank of Qatar, and holds a Master’s in Applied Science, and an MBA in Business Strategy from Oxford University, UK.</p>
+</div>
+
+<div id="qasim" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Qasim Abbas</h3>
+    <h4>Group Finance Manager</h4>
+  </div>
+  <br>
+  <p>Qasim Abbas is a Corporate Finance Executive with 12 years of Finance and Accounts Management expertise from both the UAE and Qatar. He is
+professionally qualified as a Chartered Financial Analyst CFA and ACCA. Qasim has broad experience of accounting procedures, finance
+management, liaison with banks, financial forecasting, budgeting, planning and costing aspects.</p>
+  <br>
+  <p>His career has progressively led to more senior positions and assignments including developing financial and governance strategies, financial
+analysis, budgeting, forecasting, ensuring compliance to all administrative matters, including audit and tax requirements.
+He has a Bachelor of Science degree in Applied Accounting from Oxford Brooks, UK.</p>
+</div>
+
+<div id="ameen" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Ameen Mohammad</h3>
+    <h4>Head of Cash Management & Banking Settlements</h4>
+  </div>
+  <br>
+  <p>Ameen Mohammad is a veteran banker with a record of accomplishments of over 40 years banking experience with both national and
+international banks. He was the Vice President & Country Head of Operations for UBL in Qatar, and before that he worked as Compliance
+Manager with the Canadian Imperial Bank of Canada (CIBC) in Toronto. </p>
+  <br>
+  <p>Ameen has hands-on experience of banking operations, including conventional and online transactions, settlement, reconciliation, audit, risk and
+compliance. He has a proven ability of driving and implementing projects, specifically in relation to risk and compliance issues.
+He has an MBA from Saint Claire University, New York, USA and a Bachelor of Commerce from University of Karachi, Pakistan.</p>
+</div>
+
+<div id="amit" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Amit Joshi</h3>
+    <h4>Head of Employee Experience (HR)</h4>
+  </div>
+  <br>
+  <p>Amit Joshi was Head of Human Resources in one of the leading Agri Tech startups in India and spearheaded the company’s explosive growth to
+over 300 people. He has 16 years of experience in Talent Acquisition, Talent Management and Talent Development with focus on integrating the
+right culture with the right people practices.</p>
+  <br>
+  <p>As HR leader, he has worked with various International organizations like Diebold Inc, Thermofisher Scientific Inc and Capgemini, with a record of accomplishments of setting up and scaling HR functions across different business phases from start -up stage to maturity. He has served as a key
+member in developing sustainable workplace capabilities and built motivational cultures that encourage productivity and deliver desired
+outcomes.</p>
+  <br>
+  <p>This background has made him skilled in utilizing HR as a valuable strategic tool that is vital to achieving an organization’s business growth
+objectives. </p>
+</div>
+<!------------ Team popup end ------------>
+	
+<!------------ Terms & privacy popup start ------------>
+<div id="terms" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Terms & Conditions</h3>
+  </div>
+  <br>
+  <h4>Lorem ipsum</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare non nisl eget pellentesque. Quisque rutrum tortor lacus, ac ornare libero lobortis vitae. Etiam posuere lorem id urna accumsan, sollicitudin tincidunt lectus vestibulum. Mauris finibus dui arcu, laoreet sollicitudin urna rutrum in. Nunc aliquam mollis odio, in vulputate augue dapibus ac. Nullam commodo rutrum efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel neque sit amet erat dictum tincidunt. In posuere, lacus non dignissim ultricies, eros nisi varius tortor, sed malesuada leo lorem non felis. Duis commodo aliquet dolor, vel aliquam velit hendrerit sed. Duis eget lorem arcu. Curabitur euismod nulla sit amet mi ultricies, ut dictum leo eleifend.</p>
+  <br>
+  <h4>Lorem ipsum</h4>
+  <p>Nulla luctus dolor nec fringilla dictum. Aenean condimentum purus in hendrerit hendrerit. Proin aliquet nisl vel imperdiet suscipit. Donec sed convallis nisi. Pellentesque dui quam, dapibus a elementum dignissim, sodales vel lectus. Sed dapibus urna id lorem accumsan, ut pretium mi suscipit. Pellentesque id ultricies nisl. Duis maximus non nunc in mollis. Aliquam erat volutpat. In sagittis orci et orci congue mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque felis erat, laoreet et magna in, efficitur venenatis neque. Duis vitae velit ut elit ornare efficitur. Donec nec nisl ullamcorper, facilisis odio varius, porttitor erat. Maecenas non mauris fermentum, ornare nulla nec, consectetur tellus.</p>
+</div>	
+	
+<div id="privacy" class="white-popup team-popup mfp-hide sans">
+  <div class="popup-title">
+	<h3>Privacy Policy</h3>
+  </div>
+  <br>
+  <h4>Lorem ipsum</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare non nisl eget pellentesque. Quisque rutrum tortor lacus, ac ornare libero lobortis vitae. Etiam posuere lorem id urna accumsan, sollicitudin tincidunt lectus vestibulum. Mauris finibus dui arcu, laoreet sollicitudin urna rutrum in. Nunc aliquam mollis odio, in vulputate augue dapibus ac. Nullam commodo rutrum efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel neque sit amet erat dictum tincidunt. In posuere, lacus non dignissim ultricies, eros nisi varius tortor, sed malesuada leo lorem non felis. Duis commodo aliquet dolor, vel aliquam velit hendrerit sed. Duis eget lorem arcu. Curabitur euismod nulla sit amet mi ultricies, ut dictum leo eleifend.</p>
+  <br>
+  <h4>Lorem ipsum</h4>
+  <p>Nulla luctus dolor nec fringilla dictum. Aenean condimentum purus in hendrerit hendrerit. Proin aliquet nisl vel imperdiet suscipit. Donec sed convallis nisi. Pellentesque dui quam, dapibus a elementum dignissim, sodales vel lectus. Sed dapibus urna id lorem accumsan, ut pretium mi suscipit. Pellentesque id ultricies nisl. Duis maximus non nunc in mollis. Aliquam erat volutpat. In sagittis orci et orci congue mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque felis erat, laoreet et magna in, efficitur venenatis neque. Duis vitae velit ut elit ornare efficitur. Donec nec nisl ullamcorper, facilisis odio varius, porttitor erat. Maecenas non mauris fermentum, ornare nulla nec, consectetur tellus.</p>
+</div>	
+<!------------ Terms & privacy popup end ------------>
+
+<!-- Add animated text -->
+<script src="/assets/staticassets/js/wow.js"></script>
+
+<script>
+new WOW().init();
+</script>
+	
+<script>
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $("#header")[addRemClass]('bgChange');
+});
+
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $("#logo")[addRemClass]('bgChange');
+});
+
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $("ul#menu")[addRemClass]('bgChange');
+});
+
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $("nav #menuToggle")[addRemClass]('bgChange');
+});
+
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $(".lng-container")[addRemClass]('bgChange');
+});
+	
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $(".participate")[addRemClass]('bgChange');
+});
+
+</script>
+	
+<!-- Add smooth transition menu --> 
+<script>
+$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').animate({
+			  scrollTop: target.offset().top
+			}, 1000);
+			return false;
+		  }
+		}
+	  });
+	});
+</script>
+
+<!-- Add flexslider -->
+<script src="/assets/staticassets/js/jquery.flexslider-min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.flexslider').flexslider({
+            animation: 'fade',
+            controlsContainer: '.flexslider',
+			slideshowSpeed: 3500
+        });
+    });
+	
+	$(document).ready(function () {
+        $('.media-slider').flexslider({
+            animation: 'slide',
+            controlsContainer: '.media-slider',
+			slideshowSpeed: 6000
+        });
+    });
+	
+	$(document).ready(function () {
+        $('.articles-slider').flexslider({
+            animation: 'none',
+            controlsContainer: '.articles-slider',
+        });
+    });
+	
+</script>
+
+<!-- Add magnifique popup --> 
+
+<script>
+    $(document).ready(function () {
+        $('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true,
+  mainClass: 'mfp-fade' // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+  
+});
+		
+    });
+</script>
+
+<!-- Add video popup -->
+<script>
+    $(document).ready(function () {
+        $('.video-pop-up').magnificPopup({
+			type: 'iframe',
+		});
+
+		$('a.gallery').magnificPopup({
+			type: 'image',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1]
+			},
+			image: {
+				titleSrc: 'title',
+				tError: 'The image could not be loaded.',
+			}
+		});
+		
+    });
+</script>
+
+<script type="text/javascript" src="/assets/staticassets/js/jQuery.countdownTimer.js"></script>
+<!-- Good alternative is to include minified file jQuery.countdownTimer.min.js -->
+<script type="text/javascript" src="/assets/staticassets/js/jQuery.countdownTimer-en.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $("#future_date").countdowntimer({
+            dateAndTime : "2018/10/31 00:00:00",
+            labelsFormat : true,
+            displayFormat : "DHMS",
+        });
+    });
+</script>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+	
+</script>
+	
+<script>
+function growthtab(evt, year) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent-2");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks-growth");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(year).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("growthOpen").click();	
+</script>
+	
+<script>
+(function(d){d.each(["backgroundColor","borderBottomColor","borderLeftColor","borderRightColor","borderTopColor","color","outlineColor"],function(f,e){d.fx.step[e]=function(g){if(!g.colorInit){g.start=c(g.elem,e);g.end=b(g.end);g.colorInit=true}g.elem.style[e]="rgb("+[Math.max(Math.min(parseInt((g.pos*(g.end[0]-g.start[0]))+g.start[0]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[1]-g.start[1]))+g.start[1]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[2]-g.start[2]))+g.start[2]),255),0)].join(",")+")"}});function b(f){var e;if(f&&f.constructor==Array&&f.length==3){return f}if(e=/rgb\(\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*\)/.exec(f)){return[parseInt(e[1]),parseInt(e[2]),parseInt(e[3])]}if(e=/rgb\(\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*\)/.exec(f)){return[parseFloat(e[1])*2.55,parseFloat(e[2])*2.55,parseFloat(e[3])*2.55]}if(e=/#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/.exec(f)){return[parseInt(e[1],16),parseInt(e[2],16),parseInt(e[3],16)]}if(e=/#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])/.exec(f)){return[parseInt(e[1]+e[1],16),parseInt(e[2]+e[2],16),parseInt(e[3]+e[3],16)]}if(e=/rgba\(0, 0, 0, 0\)/.exec(f)){return a.transparent}return a[d.trim(f).toLowerCase()]}function c(g,e){var f;do{f=d.css(g,e);if(f!=""&&f!="transparent"||d.nodeName(g,"body")){break}e="backgroundColor"}while(g=g.parentNode);return b(f)}var a={aqua:[0,255,255],azure:[240,255,255],beige:[245,245,220],black:[0,0,0],blue:[0,0,255],brown:[165,42,42],cyan:[0,255,255],darkblue:[0,0,139],darkcyan:[0,139,139],darkgrey:[169,169,169],darkgreen:[0,100,0],darkkhaki:[189,183,107],darkmagenta:[139,0,139],darkolivegreen:[85,107,47],darkorange:[255,140,0],darkorchid:[153,50,204],darkred:[139,0,0],darksalmon:[233,150,122],darkviolet:[148,0,211],fuchsia:[255,0,255],gold:[255,215,0],green:[0,128,0],indigo:[75,0,130],khaki:[240,230,140],lightblue:[173,216,230],lightcyan:[224,255,255],lightgreen:[144,238,144],lightgrey:[211,211,211],lightpink:[255,182,193],lightyellow:[255,255,224],lime:[0,255,0],magenta:[255,0,255],maroon:[128,0,0],navy:[0,0,128],olive:[128,128,0],orange:[255,165,0],pink:[255,192,203],purple:[128,0,128],violet:[128,0,128],red:[255,0,0],silver:[192,192,192],white:[255,255,255],yellow:[255,255,0],transparent:[255,255,255]}})(jQuery);
+</script>
+
+</body>
+</html>
